@@ -3,6 +3,7 @@ END = _{ "End" }
 alpha = _{ 'a'..'z' | 'A'..'Z' }
 digit = _{ '0'..'9' }
 ID_CHARACTER = _{ alpha | digit | "_" | "." | "-" }
+REFERENCE_PATH_CHARACTER = _ { !"'" ~ ANY  }
 id = { alpha ~ ID_CHARACTER* }
 WS = _{ " " | "\t" | "\n" }
 int = { ("+" | "-")? ~ digit+ }
@@ -10,17 +11,22 @@ string = { (!"\"" ~ ANY)* }
 string_outer = _{ "\"" ~ string ~ "\"" }
 float = { ("+" | "-")? ~ digit+ ~ "." ~ digit+ }
 
-reference_path = { ID_CHARACTER+ }
+reference_path = { REFERENCE_PATH_CHARACTER+ }
 reference = { id ~ "'" ~ reference_path ~ "'" }
 
-value = { struct_ | float | int | reference | id | string_outer }
+// TODO: does not handle empty entries yet.
+array = { "(" ~ value ~ ("," ~ value)* ~ ")" }
+
+value = { array | struct_ | float | int | reference | id | string_outer }
 
 array_index = _{ "(" ~ int ~ ")" }
 struct_properties = _{ property_assignment ~ WHITE_SPACE* ~ ("," ~ WHITE_SPACE* ~ property_assignment)* }
 struct_ = { "(" ~ struct_properties ~ ")" }
 
-property_assignment = { id ~ array_index? ~ WHITE_SPACE* ~ "=" ~ WHITE_SPACE* ~ value }
-object_statement = { object | property_assignment }
+property_assignment = { id ~ array_index? ~ WHITE_SPACE* ~ "=" ~ (NEWLINE | (WHITE_SPACE* ~ value)) }
+property_assignment_vector = { id ~  WHITE_SPACE+ ~ float ~ WHITE_SPACE* ~ ("," ~ WHITE_SPACE* ~ float)* }
+
+object_statement = { object | property_assignment | property_assignment_vector }
 object_statements = { object_statement ~ (WHITE_SPACE+ ~ object_statement)* }
 object = { BEGIN ~ WHITE_SPACE+ ~ id ~ (WHITE_SPACE+ ~ object_statements)? ~ WHITE_SPACE+ ~ END ~ WHITE_SPACE+ ~ id }
 

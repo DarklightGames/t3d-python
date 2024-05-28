@@ -47,49 +47,54 @@ impl T3dParser {
     fn object(input: Node) -> Result<T3dObject> {
         let mut children = Vec::new();
         let mut properties = HashMap::new();
+        let mut vector_properties = Vec::new();
         match_nodes!(input.into_children();
             [id(i), object_statements(statements), id(_)] => {
                 for statement in statements {
                     match statement {
                         T3dObjectStatement::Object(o) => {
-                            // println!("{:?}", o);
                             children.push(Box::new(o));
                         },
                         T3dObjectStatement::PropertyAssignment(p) => {
-                            // println!("{:?}", p);
-                            // TODO: check if the name already exists
                             if let Some(value) = properties.get_mut(&p.name) {
+                                // Property has already been encountered.
                                 match value {
                                     T3dPropertyValue::Array(a) => {
-                                        a.push(p.value)
+                                        a.push((p.index, p.value))
                                     },
                                     T3dPropertyValue::Value(_) => {
-                                        // TODO: raise error here!
+                                        // TODO: handle this gracefully, for now just ignore
+                                        //return Err(format!("Un-indexed property assignment encountered for array type {}", &p.name))
                                     }
                                 }
                             } else {
                                 // New property encountered.
-                                if let Some(index) = p.index {
+                                if let Some(_) = p.index {
                                     // Property is an array, so add a new array type.
-                                    properties.insert(p.name, T3dPropertyValue::Array(vec![p.value]));
+                                    properties.insert(p.name, T3dPropertyValue::Array(vec![(p.index, p.value)]));
                                 } else {
                                     properties.insert(p.name, T3dPropertyValue::Value(p.value));
                                 }
                             }
+                        },
+                        T3dObjectStatement::PropertyAssignmentVector(p) => {
+                            vector_properties.push((p.name, p.value))
                         }
                     }
                 }
                 Ok(T3dObject {
                     type_: i,
                     children,
-                    properties
+                    properties,
+                    vector_properties
                 })
             },
             [id(i), id(_)] => {
                 Ok(T3dObject {
                     type_: i,
                     children,
-                    properties
+                    properties,
+                    vector_properties
                 })
             }
         )
@@ -98,11 +103,17 @@ impl T3dParser {
     fn object_statement(input: Node) -> Result<T3dObjectStatement> {
         match_nodes!(input.into_children();
             [object(o)] => Ok(T3dObjectStatement::Object(o)),
-            [property_assignment(p)] => Ok(T3dObjectStatement::PropertyAssignment(p))
+            [property_assignment(p)] => Ok(T3dObjectStatement::PropertyAssignment(p)),
+            [property_assignment_vector(p)] => Ok(T3dObjectStatement::PropertyAssignmentVector(p)),
         )
     }
 
     fn property_assignment(input: Node) -> Result<T3dPropertyAssignment> {
+        // An empty string will be written like this:
+        // Foo=
+        // Instead of:
+        // Foo=""
+        // Therefore, we have to report a missing value as an empty string.
         match_nodes!(input.into_children();
             [id(name), value(v)] => Ok(T3dPropertyAssignment {
                 name,
@@ -113,7 +124,29 @@ impl T3dParser {
                 name,
                 value: v,
                 index: Some(index)
-            })
+            }),
+            [id(name)] => Ok(T3dPropertyAssignment {
+                name,
+                value: T3dValue::String(String::new()),
+                index: None
+            }),
+            [id(name), int(index)] => Ok(T3dPropertyAssignment {
+                name,
+                value: T3dValue::String(String::new()),
+                index: Some(index)
+            }),
+        )
+    }
+
+    fn property_assignment_vector(input: Node) -> Result<T3dPropertyAssignmentVector> {
+
+        match_nodes!(input.into_children();
+            [id(name), float(x), float(y), float(z)] => {
+                Ok(T3dPropertyAssignmentVector {
+                    name,
+                    value: (x, y, z),
+                })
+            }
         )
     }
 
@@ -149,9 +182,18 @@ impl T3dParser {
         )
     }
 
+    fn array(input: Node) -> Result<Vec<Option<T3dValue>>> {
+        let mut values: Vec<Option<T3dValue>> = Vec::new();
+        match_nodes_any!(input.into_children();
+            value(v) => values.push(Some(v))
+        );
+        Ok(values)
+    }
+
     fn value(input: Node) -> Result<T3dValue> {
         let str = String::from(input.as_str());
         match_nodes!(input.into_children();
+            [array(a)] => Ok(T3dValue::Array(a)),
             [int(i)] => Ok(T3dValue::Int(i)),
             [float(f)] => Ok(T3dValue::Float(f)),
             [string(s)] => Ok(T3dValue::String(s)),
