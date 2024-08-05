@@ -1,18 +1,9 @@
 use std::collections::HashMap;
-use std::fmt::{Debug};
 use pyo3::prelude::*;
 use pyo3::{IntoPy, PyObject, Python, ToPyObject};
 use pyo3::exceptions::PyKeyError;
 
 pub type T3dStruct = HashMap<String, T3dValue>;
-
-// impl ToT3dString for T3dStruct {
-//     fn to_t3d_string(&self) -> String {
-//         let a = self.properties.iter().map(
-//             |(key, value)| format!("{}={}", key, value.to_string())).collect::<Vec<String>>().join(",");
-//         format!("({})", a)
-//     }
-// }
 
 #[pyclass]
 #[derive(Debug, Clone)]
@@ -115,7 +106,6 @@ impl IntoPy<PyObject> for T3dPropertyValue {
         match self {
             T3dPropertyValue::Value(value) => { value.into_py(py) }
             T3dPropertyValue::Array(array) => { array.into_py(py) }
-
         }
     }
 }

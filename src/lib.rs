@@ -77,10 +77,51 @@ mod tests {
                             }
                         }
                     },
-                    T3dPropertyValue::Array(_) => {
+                    _ => {
                         Err(String::from("Wrong value type"))
                     }
                 }
+            },
+            Err(error) => {
+                Err(error.to_string())
+            }
+        }
+    }
+
+
+    #[test]
+    fn ut99_polygon() -> Result<(), String> {
+        let contents = String::from("
+Begin Polygon Item=2DLoftSIDE Texture=DecayedS.Wall.dWallA3 Flags=32768
+    Origin   -01023.999878,+00000.000000,-01056.000122
+    Normal   -00000.923880,+00000.382684,-00000.000000
+    TextureU +00000.191342,+00000.461940,+00000.000000
+    TextureV +00000.000000,+00000.000000,-00000.500000
+    Pan      U=57 V=99
+    Vertex   -01024.000000,+00000.000000,-00016.000090
+    Vertex   -01024.000000,+00000.000000,+00495.999908
+    Vertex   -00724.077332,+00724.077271,+00495.999939
+    Vertex   -00724.077271,+00724.077271,-00016.000063
+End Polygon
+        ");
+        let result = parser::parse_t3d(contents.as_str());
+        match result {
+            Ok(objects) => {
+                assert_eq!(1, objects.len());
+                let object = objects.first().unwrap();
+                assert_eq!(4, object.properties.len());
+                let pan = object.properties.get("Pan").unwrap();
+                println!("{:?}", pan);
+                if let T3dPropertyValue::Value(pan) = pan {
+                    if let T3dValue::Struct(pan) = pan {
+                        assert_eq!(2, pan.len());
+                    } else {
+                        return Err(String::from("Expected struct value for Pan"));
+                    }
+                } else {
+                    return Err(String::from("Expected struct value for Pan"));
+                }
+                Ok(())
             },
             Err(error) => {
                 Err(error.to_string())
@@ -130,7 +171,7 @@ mod tests {
     #[test]
     fn it_works() -> Result<(), String> {
         let mut contents = String::new();
-        match File::open("src/tests/data/terraininfo.t3d") {
+        match File::open("src/tests/data/DMDeathFan.t3d") {
             Ok(mut file) => {
                 match file.read_to_string(&mut contents) {
                     Ok(_) => {

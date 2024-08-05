@@ -62,7 +62,7 @@ impl T3dParser {
                                     T3dPropertyValue::Array(a) => {
                                         a.push((p.index, p.value))
                                     },
-                                    T3dPropertyValue::Value(_) => {
+                                    _ => {
                                         // TODO: handle this gracefully, for now just ignore
                                         //return Err(format!("Un-indexed property assignment encountered for array type {}", &p.name))
                                     }
@@ -105,6 +105,7 @@ impl T3dParser {
             [object(o)] => Ok(T3dObjectStatement::Object(o)),
             [property_assignment(p)] => Ok(T3dObjectStatement::PropertyAssignment(p)),
             [property_assignment_vector(p)] => Ok(T3dObjectStatement::PropertyAssignmentVector(p)),
+            [property_assignment_inline_struct(p)] => Ok(T3dObjectStatement::PropertyAssignment(p))
         )
     }
 
@@ -148,6 +149,22 @@ impl T3dParser {
                 })
             }
         )
+    }
+
+    fn property_assignment_inline_struct(input: Node) -> Result<T3dPropertyAssignment> {
+        let mut properties = HashMap::new();
+        let mut name = String::new();
+        match_nodes_any!(input.into_children();
+            id(id) => { name = id; },
+            property_assignment(p) => {
+                properties.insert(p.name, p.value);
+            }
+        );
+        Ok(T3dPropertyAssignment {
+            name,
+            value: T3dValue::Struct(Box::new(properties)),
+            index: None
+        })
     }
 
     fn int(input: Node) -> Result<i32> {

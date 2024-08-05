@@ -1,15 +1,14 @@
 BEGIN = _{ "Begin" }
 END = _{ "End" }
-alpha = _{ 'a'..'z' | 'A'..'Z' }
-digit = _{ '0'..'9' }
-ID_CHARACTER = _{ alpha | digit | "_" | "." | "-" }
+NON_DIGIT_ID_CHARACTER = _{ ASCII_ALPHA | "_" | "." | "-" }
+ID_CHARACTER = _{ ASCII_DIGIT | NON_DIGIT_ID_CHARACTER }
 REFERENCE_PATH_CHARACTER = _ { !"'" ~ ANY  }
-id = { alpha ~ ID_CHARACTER* }
+id = { ID_CHARACTER+ }
 WS = _{ " " | "\t" | "\n" }
-int = { ("+" | "-")? ~ digit+ }
+int = { ("+" | "-")? ~ ASCII_DIGIT+ ~ !NON_DIGIT_ID_CHARACTER }
 string = { (!"\"" ~ ANY)* }
 string_outer = _{ "\"" ~ string ~ "\"" }
-float = { ("+" | "-")? ~ digit+ ~ "." ~ digit+ }
+float = { ("+" | "-")? ~ ASCII_DIGIT+ ~ "." ~ ASCII_DIGIT+ ~ ("e" ~ int)? }
 
 reference_path = { REFERENCE_PATH_CHARACTER+ }
 reference = { id ~ "'" ~ reference_path ~ "'" }
@@ -25,8 +24,9 @@ struct_ = { "(" ~ struct_properties ~ ")" }
 
 property_assignment = { id ~ array_index? ~ WHITE_SPACE* ~ "=" ~ (NEWLINE | (WHITE_SPACE* ~ value)) }
 property_assignment_vector = { id ~  WHITE_SPACE+ ~ float ~ WHITE_SPACE* ~ ("," ~ WHITE_SPACE* ~ float)* }
+property_assignment_inline_struct = { id ~ WS+ ~ property_assignment ~ (WS+ ~ property_assignment)* }
 
-object_statement = { object | property_assignment | property_assignment_vector }
+object_statement = { object | property_assignment | property_assignment_vector | property_assignment_inline_struct }
 object_statements = { object_statement ~ (WHITE_SPACE+ ~ object_statement)* }
 object = { BEGIN ~ WHITE_SPACE+ ~ id ~ (WHITE_SPACE+ ~ object_statements)? ~ WHITE_SPACE+ ~ END ~ WHITE_SPACE+ ~ id }
 
