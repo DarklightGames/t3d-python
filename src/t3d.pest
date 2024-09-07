@@ -1,8 +1,8 @@
 BEGIN = _{ "Begin" }
 END = _{ "End" }
-NON_DIGIT_ID_CHARACTER = _{ ASCII_ALPHA | "_" | "." | "-" }
+NON_DIGIT_ID_CHARACTER = _{ ASCII_ALPHA | "_" }
 ID_CHARACTER = _{ ASCII_DIGIT | NON_DIGIT_ID_CHARACTER }
-REFERENCE_PATH_CHARACTER = _ { !"'" ~ ANY  }
+REFERENCE_PATH_CHARACTER = _ { !WS ~ !"'" ~ !"\"" ~ ASCII }
 id = { ID_CHARACTER+ }
 WS = _{ " " | "\t" | "\n" }
 int = { ("+" | "-")? ~ ASCII_DIGIT+ ~ !NON_DIGIT_ID_CHARACTER }
@@ -16,7 +16,7 @@ reference = { id ~ "'" ~ reference_path ~ "'" }
 // TODO: does not handle empty entries yet.
 array = { "(" ~ value ~ ("," ~ value)* ~ ")" }
 
-value = { array | struct_ | float | int | reference | id | string_outer }
+value = { array | struct_ | float | int | reference | reference_path | string_outer }
 
 array_index = _{ "(" ~ int ~ ")" }
 struct_properties = _{ property_assignment ~ WHITE_SPACE* ~ ("," ~ WHITE_SPACE* ~ property_assignment)* }

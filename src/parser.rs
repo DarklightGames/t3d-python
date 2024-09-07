@@ -162,7 +162,7 @@ impl T3dParser {
         );
         Ok(T3dPropertyAssignment {
             name,
-            value: T3dValue::Struct(Box::new(properties)),
+            value: T3dValue::InlineStruct(Box::new(properties)),
             index: None
         })
     }
@@ -216,11 +216,11 @@ impl T3dParser {
             [string(s)] => Ok(T3dValue::String(s)),
             [struct_(s)] => Ok(T3dValue::Struct(s)),
             [reference(r)] => Ok(T3dValue::Reference(r)),
-            [id(i)] => {
+            [reference_path(r)] => {
                 if str.eq_ignore_ascii_case("true") || str.eq_ignore_ascii_case("false") {
                     Ok(T3dValue::Bool(str.to_lowercase().parse::<bool>().unwrap()))
                 } else {
-                    Ok(T3dValue::Identifier(i))
+                    Ok(T3dValue::Identifier(r))
                 }
             }
         )

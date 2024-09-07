@@ -92,17 +92,17 @@ mod tests {
     #[test]
     fn ut99_polygon() -> Result<(), String> {
         let contents = String::from("
-Begin Polygon Item=2DLoftSIDE Texture=DecayedS.Wall.dWallA3 Flags=32768
-    Origin   -01023.999878,+00000.000000,-01056.000122
-    Normal   -00000.923880,+00000.382684,-00000.000000
-    TextureU +00000.191342,+00000.461940,+00000.000000
-    TextureV +00000.000000,+00000.000000,-00000.500000
-    Pan      U=57 V=99
-    Vertex   -01024.000000,+00000.000000,-00016.000090
-    Vertex   -01024.000000,+00000.000000,+00495.999908
-    Vertex   -00724.077332,+00724.077271,+00495.999939
-    Vertex   -00724.077271,+00724.077271,-00016.000063
-End Polygon
+            Begin Polygon Item=2DLoftSIDE Texture=DecayedS.Wall.dWallA3 Flags=32768
+                Origin   -01023.999878,+00000.000000,-01056.000122
+                Normal   -00000.923880,+00000.382684,-00000.000000
+                TextureU +00000.191342,+00000.461940,+00000.000000
+                TextureV +00000.000000,+00000.000000,-00000.500000
+                Pan      U=57 V=99
+                Vertex   -01024.000000,+00000.000000,-00016.000090
+                Vertex   -01024.000000,+00000.000000,+00495.999908
+                Vertex   -00724.077332,+00724.077271,+00495.999939
+                Vertex   -00724.077271,+00724.077271,-00016.000063
+            End Polygon
         ");
         let result = parser::parse_t3d(contents.as_str());
         match result {
@@ -113,7 +113,7 @@ End Polygon
                 let pan = object.properties.get("Pan").unwrap();
                 println!("{:?}", pan);
                 if let T3dPropertyValue::Value(pan) = pan {
-                    if let T3dValue::Struct(pan) = pan {
+                    if let T3dValue::InlineStruct(pan) = pan {
                         assert_eq!(2, pan.len());
                     } else {
                         return Err(String::from("Expected struct value for Pan"));
@@ -168,17 +168,16 @@ End Polygon
         }
     }
 
-    #[test]
-    fn it_works() -> Result<(), String> {
+    fn parse_file(path: String) -> Result<Vec<T3dObject>, String> {
         let mut contents = String::new();
-        match File::open("src/tests/data/DMDeathFan.t3d") {
+        match File::open(path) {
             Ok(mut file) => {
                 match file.read_to_string(&mut contents) {
                     Ok(_) => {
                         let result = parser::parse_t3d(contents.as_str());
                         match result {
-                            Ok(_) => {
-                                Ok(())
+                            Ok(objects) => {
+                                Ok(objects)
                             }
                             Err(error) => {
                                 print!("{}", error.to_string().as_str());
@@ -187,7 +186,7 @@ End Polygon
                         }
                     }
                     Err(_) => {
-                        Err("Failed to file contents".to_string())
+                        Err("Failed to read file contents".to_string())
                     }
                 }
             }
@@ -196,4 +195,29 @@ End Polygon
             }
         }
     }
+
+    #[test]
+    fn dm_death_fan() -> Result<(), String> {
+        match parse_file("src/tests/data/DMDeathFan.t3d".to_string()) {
+            Ok(_objects) => {
+                Ok(())
+            }
+            Err(error) => {
+                Err(error)
+            }
+        }
+    }
+
+    #[test]
+    fn mg_ntw2_lib_stairway() -> Result<(), String> {
+        match parse_file("src/tests/data/MG_NTW2_Lib_Stairway.t3d".to_string()) {
+            Ok(_objects) => {
+                Ok(())
+            }
+            Err(error) => {
+                Err(error)
+            }
+        }
+    }
+
 }
