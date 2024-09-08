@@ -220,4 +220,16 @@ mod tests {
         }
     }
 
+    #[test]
+    fn mirra_test() -> Result<(), String> {
+        match parse_file("src/tests/data/mirra.t3d".to_string()) {
+            Ok(_objects) => {
+                Ok(())
+            }
+            Err(error) => {
+                Err(error)
+            }
+        }
+    }
+
 }

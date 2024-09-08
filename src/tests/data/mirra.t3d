@@ -1,0 +1,1893 @@
+Begin Map
+Begin Actor Class=Engine.LevelInfo Name=LevelInfo174
+    TimeSeconds=19.83414
+    AIProfile(0)=4032
+    Level=LevelInfo'MyLevel.LevelInfo174'
+    Tag=LevelInfo
+    Region=(Zone=LevelInfo'MyLevel.LevelInfo174',iLeaf=-1)
+End Actor
+Begin Actor Class=Engine.Brush Name=Brush212
+    MainScale=(SheerAxis=SHEER_ZX)
+    PostScale=(SheerAxis=SHEER_ZX)
+    Level=LevelInfo'MyLevel.LevelInfo174'
+    Tag=Brush
+    Region=(Zone=LevelInfo'MyLevel.LevelInfo174',iLeaf=82,ZoneNumber=1)
+    Begin Brush Name=Brush
+       Begin PolyList
+       End PolyList
+    End Brush
+    Brush=Model'MyLevel.Brush'
+End Actor
+Begin Actor Class=Engine.Brush Name=Brush15
+    CsgOper=CSG_Subtract
+    MainScale=(SheerAxis=SHEER_ZX)
+    PostScale=(SheerAxis=SHEER_ZX)
+    Level=LevelInfo'MyLevel.LevelInfo174'
+    Tag=Brush
+    Region=(Zone=LevelInfo'MyLevel.LevelInfo174',iLeaf=82,ZoneNumber=1)
+    Location=(Z=127)
+    OldLocation=(Z=127)
+    Begin Brush Name=Model16
+       Begin PolyList
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=0 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00137.000000,+00512.000000,-00128.000000
+             Normal   +00000.498882,+00000.866670,+00000.000000
+             TextureU +00000.866670,-00000.498882,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   +00137.000000,+00512.000000,-00128.000000
+             Vertex   +00137.000000,+00512.000000,+00128.000000
+             Vertex   +00375.000000,+00375.000000,+00128.000000
+             Vertex   +00375.000000,+00375.000000,-00128.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=1 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00375.000000,+00375.000000,-00128.000000
+             Normal   +00000.866670,+00000.498882,+00000.000000
+             TextureU +00000.498882,-00000.866670,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   +00375.000000,+00375.000000,-00128.000000
+             Vertex   +00375.000000,+00375.000000,+00128.000000
+             Vertex   +00512.000000,+00137.000000,+00128.000000
+             Vertex   +00512.000000,+00137.000000,-00128.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=2 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00512.000000,+00137.000000,-00128.000000
+             Normal   +00001.000000,+00000.000000,+00000.000000
+             TextureU +00000.000000,-00001.000000,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   +00512.000000,+00137.000000,-00128.000000
+             Vertex   +00512.000000,+00137.000000,+00128.000000
+             Vertex   +00512.000000,-00137.000000,+00128.000000
+             Vertex   +00512.000000,-00137.000000,-00128.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=3 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00512.000000,-00137.000000,-00128.000000
+             Normal   +00000.866670,-00000.498882,+00000.000000
+             TextureU -00000.498882,-00000.866670,-00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   +00512.000000,-00137.000000,-00128.000000
+             Vertex   +00512.000000,-00137.000000,+00128.000000
+             Vertex   +00375.000000,-00375.000000,+00128.000000
+             Vertex   +00375.000000,-00375.000000,-00128.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=4 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00375.000000,-00375.000000,-00128.000000
+             Normal   +00000.498882,-00000.866670,+00000.000000
+             TextureU -00000.866670,-00000.498882,-00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   +00375.000000,-00375.000000,-00128.000000
+             Vertex   +00375.000000,-00375.000000,+00128.000000
+             Vertex   +00137.000000,-00512.000000,+00128.000000
+             Vertex   +00137.000000,-00512.000000,-00128.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=5 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00137.000000,-00512.000000,-00128.000000
+             Normal   +00000.000000,-00001.000000,+00000.000000
+             TextureU -00001.000000,-00000.000000,-00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   +00137.000000,-00512.000000,-00128.000000
+             Vertex   +00137.000000,-00512.000000,+00128.000000
+             Vertex   -00137.000000,-00512.000000,+00128.000000
+             Vertex   -00137.000000,-00512.000000,-00128.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=6 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   -00137.000000,-00512.000000,-00128.000000
+             Normal   -00000.498882,-00000.866670,+00000.000000
+             TextureU -00000.866670,+00000.498882,+00000.000000
+             TextureV -00000.000000,+00000.000000,-00001.000000
+             Vertex   -00137.000000,-00512.000000,-00128.000000
+             Vertex   -00137.000000,-00512.000000,+00128.000000
+             Vertex   -00375.000000,-00375.000000,+00128.000000
+             Vertex   -00375.000000,-00375.000000,-00128.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=7 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   -00375.000000,-00375.000000,-00128.000000
+             Normal   -00000.866670,-00000.498882,+00000.000000
+             TextureU -00000.498882,+00000.866670,+00000.000000
+             TextureV -00000.000000,+00000.000000,-00001.000000
+             Vertex   -00375.000000,-00375.000000,-00128.000000
+             Vertex   -00375.000000,-00375.000000,+00128.000000
+             Vertex   -00512.000000,-00137.000000,+00128.000000
+             Vertex   -00512.000000,-00137.000000,-00128.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=8 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   -00512.000000,-00137.000000,-00128.000000
+             Normal   -00001.000000,+00000.000000,+00000.000000
+             TextureU +00000.000000,+00001.000000,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   -00512.000000,-00137.000000,-00128.000000
+             Vertex   -00512.000000,-00137.000000,+00128.000000
+             Vertex   -00512.000000,+00137.000000,+00128.000000
+             Vertex   -00512.000000,+00137.000000,-00128.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=9 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   -00512.000000,+00137.000000,-00128.000000
+             Normal   -00000.866670,+00000.498882,+00000.000000
+             TextureU +00000.498882,+00000.866670,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   -00512.000000,+00137.000000,-00128.000000
+             Vertex   -00512.000000,+00137.000000,+00128.000000
+             Vertex   -00375.000000,+00375.000000,+00128.000000
+             Vertex   -00375.000000,+00375.000000,-00128.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=10 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   -00375.000000,+00375.000000,-00128.000000
+             Normal   -00000.498882,+00000.866670,+00000.000000
+             TextureU +00000.866670,+00000.498882,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   -00375.000000,+00375.000000,-00128.000000
+             Vertex   -00375.000000,+00375.000000,+00128.000000
+             Vertex   -00137.000000,+00512.000000,+00128.000000
+             Vertex   -00137.000000,+00512.000000,-00128.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=11 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   -00137.000000,+00512.000000,-00128.000000
+             Normal   +00000.000000,+00001.000000,+00000.000000
+             TextureU +00001.000000,-00000.000000,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   -00137.000000,+00512.000000,-00128.000000
+             Vertex   -00137.000000,+00512.000000,+00128.000000
+             Vertex   +00137.000000,+00512.000000,+00128.000000
+             Vertex   +00137.000000,+00512.000000,-00128.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Cap Texture=HP2_Master.Floors.greenfloor Link=12 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00000.000000,-01824.000000,+00128.000000
+             Normal   +00000.000000,+00000.000000,+00001.000000
+             TextureU +00001.000000,+00000.000000,+00000.000000
+             TextureV +00000.000000,+00001.000000,+00000.000000
+             Vertex   -00137.000000,+00512.000000,+00128.000000
+             Vertex   -00375.000000,+00375.000000,+00128.000000
+             Vertex   -00512.000000,+00137.000000,+00128.000000
+             Vertex   -00512.000000,-00137.000000,+00128.000000
+             Vertex   -00375.000000,-00375.000000,+00128.000000
+             Vertex   -00137.000000,-00512.000000,+00128.000000
+             Vertex   +00137.000000,-00512.000000,+00128.000000
+             Vertex   +00375.000000,-00375.000000,+00128.000000
+             Vertex   +00512.000000,-00137.000000,+00128.000000
+             Vertex   +00512.000000,+00137.000000,+00128.000000
+             Vertex   +00375.000000,+00375.000000,+00128.000000
+             Vertex   +00137.000000,+00512.000000,+00128.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Cap Texture=HP2_Master.Floors.greenfloor Link=13 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00000.000000,-01824.000000,-00128.000000
+             Normal   +00000.000000,+00000.000000,-00001.000000
+             TextureU +00001.000000,+00000.000000,+00000.000000
+             TextureV +00000.000000,+00001.000000,+00000.000000
+             Vertex   +00137.000000,+00512.000000,-00128.000000
+             Vertex   +00375.000000,+00375.000000,-00128.000000
+             Vertex   +00512.000000,+00137.000000,-00128.000000
+             Vertex   +00512.000000,-00137.000000,-00128.000000
+             Vertex   +00375.000000,-00375.000000,-00128.000000
+             Vertex   +00137.000000,-00512.000000,-00128.000000
+             Vertex   -00137.000000,-00512.000000,-00128.000000
+             Vertex   -00375.000000,-00375.000000,-00128.000000
+             Vertex   -00512.000000,-00137.000000,-00128.000000
+             Vertex   -00512.000000,+00137.000000,-00128.000000
+             Vertex   -00375.000000,+00375.000000,-00128.000000
+             Vertex   -00137.000000,+00512.000000,-00128.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+       End PolyList
+    End Brush
+    Brush=Model'MyLevel.Model16'
+    CollisionRadius=512
+    CollisionWidth=512
+    CollisionHeight=128
+End Actor
+Begin Actor Class=Engine.Brush Name=Brush22
+    CsgOper=CSG_Subtract
+    MainScale=(SheerAxis=SHEER_ZX)
+    PostScale=(SheerAxis=SHEER_ZX)
+    Level=LevelInfo'MyLevel.LevelInfo174'
+    Tag=Brush
+    Region=(Zone=LevelInfo'MyLevel.LevelInfo174',iLeaf=84,ZoneNumber=1)
+    Location=(Z=383)
+    OldLocation=(Z=383)
+    Begin Brush Name=Model23
+       Begin PolyList
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=0 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00137.000000,+00512.000000,-00128.000000
+             Normal   +00000.498882,+00000.866670,+00000.000000
+             TextureU +00000.866670,-00000.498882,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   +00137.000000,+00512.000000,-00128.000000
+             Vertex   +00137.000000,+00512.000000,+00128.000000
+             Vertex   +00375.000000,+00375.000000,+00128.000000
+             Vertex   +00375.000000,+00375.000000,-00128.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=1 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00375.000000,+00375.000000,-00128.000000
+             Normal   +00000.866670,+00000.498882,+00000.000000
+             TextureU +00000.498882,-00000.866670,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   +00375.000000,+00375.000000,-00128.000000
+             Vertex   +00375.000000,+00375.000000,+00128.000000
+             Vertex   +00512.000000,+00137.000000,+00128.000000
+             Vertex   +00512.000000,+00137.000000,-00128.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=2 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00512.000000,+00137.000000,-00128.000000
+             Normal   +00001.000000,+00000.000000,+00000.000000
+             TextureU +00000.000000,-00001.000000,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   +00512.000000,+00137.000000,-00128.000000
+             Vertex   +00512.000000,+00137.000000,+00128.000000
+             Vertex   +00512.000000,-00137.000000,+00128.000000
+             Vertex   +00512.000000,-00137.000000,-00128.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=3 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00512.000000,-00137.000000,-00128.000000
+             Normal   +00000.866670,-00000.498882,+00000.000000
+             TextureU -00000.498882,-00000.866670,-00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   +00512.000000,-00137.000000,-00128.000000
+             Vertex   +00512.000000,-00137.000000,+00128.000000
+             Vertex   +00375.000000,-00375.000000,+00128.000000
+             Vertex   +00375.000000,-00375.000000,-00128.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=4 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00375.000000,-00375.000000,-00128.000000
+             Normal   +00000.498882,-00000.866670,+00000.000000
+             TextureU -00000.866670,-00000.498882,-00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   +00375.000000,-00375.000000,-00128.000000
+             Vertex   +00375.000000,-00375.000000,+00128.000000
+             Vertex   +00137.000000,-00512.000000,+00128.000000
+             Vertex   +00137.000000,-00512.000000,-00128.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=5 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00137.000000,-00512.000000,-00128.000000
+             Normal   +00000.000000,-00001.000000,+00000.000000
+             TextureU -00001.000000,-00000.000000,-00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   +00137.000000,-00512.000000,-00128.000000
+             Vertex   +00137.000000,-00512.000000,+00128.000000
+             Vertex   -00137.000000,-00512.000000,+00128.000000
+             Vertex   -00137.000000,-00512.000000,-00128.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=6 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   -00137.000000,-00512.000000,-00128.000000
+             Normal   -00000.498882,-00000.866670,+00000.000000
+             TextureU -00000.866670,+00000.498882,+00000.000000
+             TextureV -00000.000000,+00000.000000,-00001.000000
+             Vertex   -00137.000000,-00512.000000,-00128.000000
+             Vertex   -00137.000000,-00512.000000,+00128.000000
+             Vertex   -00375.000000,-00375.000000,+00128.000000
+             Vertex   -00375.000000,-00375.000000,-00128.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=7 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   -00375.000000,-00375.000000,-00128.000000
+             Normal   -00000.866670,-00000.498882,+00000.000000
+             TextureU -00000.498882,+00000.866670,+00000.000000
+             TextureV -00000.000000,+00000.000000,-00001.000000
+             Vertex   -00375.000000,-00375.000000,-00128.000000
+             Vertex   -00375.000000,-00375.000000,+00128.000000
+             Vertex   -00512.000000,-00137.000000,+00128.000000
+             Vertex   -00512.000000,-00137.000000,-00128.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=8 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   -00512.000000,-00137.000000,-00128.000000
+             Normal   -00001.000000,+00000.000000,+00000.000000
+             TextureU +00000.000000,+00001.000000,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   -00512.000000,-00137.000000,-00128.000000
+             Vertex   -00512.000000,-00137.000000,+00128.000000
+             Vertex   -00512.000000,+00137.000000,+00128.000000
+             Vertex   -00512.000000,+00137.000000,-00128.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=9 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   -00512.000000,+00137.000000,-00128.000000
+             Normal   -00000.866670,+00000.498882,+00000.000000
+             TextureU +00000.498882,+00000.866670,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   -00512.000000,+00137.000000,-00128.000000
+             Vertex   -00512.000000,+00137.000000,+00128.000000
+             Vertex   -00375.000000,+00375.000000,+00128.000000
+             Vertex   -00375.000000,+00375.000000,-00128.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=10 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   -00375.000000,+00375.000000,-00128.000000
+             Normal   -00000.498882,+00000.866670,+00000.000000
+             TextureU +00000.866670,+00000.498882,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   -00375.000000,+00375.000000,-00128.000000
+             Vertex   -00375.000000,+00375.000000,+00128.000000
+             Vertex   -00137.000000,+00512.000000,+00128.000000
+             Vertex   -00137.000000,+00512.000000,-00128.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=11 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   -00137.000000,+00512.000000,-00128.000000
+             Normal   +00000.000000,+00001.000000,+00000.000000
+             TextureU +00001.000000,-00000.000000,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   -00137.000000,+00512.000000,-00128.000000
+             Vertex   -00137.000000,+00512.000000,+00128.000000
+             Vertex   +00137.000000,+00512.000000,+00128.000000
+             Vertex   +00137.000000,+00512.000000,-00128.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Cap Texture=HP2_Master.Floors.greenfloor Link=12 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00000.000000,-01824.000000,+00128.000000
+             Normal   +00000.000000,+00000.000000,+00001.000000
+             TextureU +00001.000000,+00000.000000,+00000.000000
+             TextureV +00000.000000,+00001.000000,+00000.000000
+             Vertex   -00137.000000,+00512.000000,+00128.000000
+             Vertex   -00375.000000,+00375.000000,+00128.000000
+             Vertex   -00512.000000,+00137.000000,+00128.000000
+             Vertex   -00512.000000,-00137.000000,+00128.000000
+             Vertex   -00375.000000,-00375.000000,+00128.000000
+             Vertex   -00137.000000,-00512.000000,+00128.000000
+             Vertex   +00137.000000,-00512.000000,+00128.000000
+             Vertex   +00375.000000,-00375.000000,+00128.000000
+             Vertex   +00512.000000,-00137.000000,+00128.000000
+             Vertex   +00512.000000,+00137.000000,+00128.000000
+             Vertex   +00375.000000,+00375.000000,+00128.000000
+             Vertex   +00137.000000,+00512.000000,+00128.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Cap Texture=HP2_Master.Floors.greenfloor Link=13 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00137.000000,+00512.000000,-00128.000000
+             Normal   +00000.000000,+00000.000000,-00001.000000
+             TextureU -00000.498882,-00000.866670,-00000.000000
+             TextureV -00000.866670,+00000.498882,+00000.000000
+             Vertex   +00137.000000,+00512.000000,-00128.000000
+             Vertex   +00375.000000,+00375.000000,-00128.000000
+             Vertex   +00512.000000,+00137.000000,-00128.000000
+             Vertex   +00512.000000,-00137.000000,-00128.000000
+             Vertex   +00375.000000,-00375.000000,-00128.000000
+             Vertex   +00137.000000,-00512.000000,-00128.000000
+             Vertex   -00137.000000,-00512.000000,-00128.000000
+             Vertex   -00375.000000,-00375.000000,-00128.000000
+             Vertex   -00512.000000,-00137.000000,-00128.000000
+             Vertex   -00512.000000,+00137.000000,-00128.000000
+             Vertex   -00375.000000,+00375.000000,-00128.000000
+             Vertex   -00137.000000,+00512.000000,-00128.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+       End PolyList
+    End Brush
+    Brush=Model'MyLevel.Model23'
+    CollisionRadius=512
+    CollisionWidth=512
+    CollisionHeight=128
+End Actor
+Begin Actor Class=Engine.Brush Name=Brush171
+    CsgOper=CSG_Subtract
+    MainScale=(SheerAxis=SHEER_ZX)
+    PostScale=(SheerAxis=SHEER_ZX)
+    Level=LevelInfo'MyLevel.LevelInfo174'
+    Tag=Brush
+    Region=(Zone=LevelInfo'MyLevel.LevelInfo174',iLeaf=54,ZoneNumber=1)
+    Location=(Z=-13)
+    OldLocation=(Z=-13)
+    Begin Brush Name=Model172
+       Begin PolyList
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=0 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00106.000000,+00256.000000,-00012.000000
+             Normal   +00000.707107,+00000.707107,+00000.000000
+             TextureU +00000.707107,-00000.707107,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   +00106.000000,+00256.000000,-00012.000000
+             Vertex   +00106.000000,+00256.000000,+00012.000000
+             Vertex   +00256.000000,+00106.000000,+00012.000000
+             Vertex   +00256.000000,+00106.000000,-00012.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=1 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00256.000000,+00106.000000,-00012.000000
+             Normal   +00001.000000,+00000.000000,+00000.000000
+             TextureU +00000.000000,-00001.000000,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   +00256.000000,+00106.000000,-00012.000000
+             Vertex   +00256.000000,+00106.000000,+00012.000000
+             Vertex   +00256.000000,-00106.000000,+00012.000000
+             Vertex   +00256.000000,-00106.000000,-00012.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=2 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00256.000000,-00106.000000,-00012.000000
+             Normal   +00000.707107,-00000.707107,+00000.000000
+             TextureU -00000.707107,-00000.707107,-00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   +00256.000000,-00106.000000,-00012.000000
+             Vertex   +00256.000000,-00106.000000,+00012.000000
+             Vertex   +00106.000000,-00256.000000,+00012.000000
+             Vertex   +00106.000000,-00256.000000,-00012.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=3 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00106.000000,-00256.000000,-00012.000000
+             Normal   +00000.000000,-00001.000000,+00000.000000
+             TextureU -00001.000000,-00000.000000,-00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   +00106.000000,-00256.000000,-00012.000000
+             Vertex   +00106.000000,-00256.000000,+00012.000000
+             Vertex   -00106.000000,-00256.000000,+00012.000000
+             Vertex   -00106.000000,-00256.000000,-00012.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=4 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   -00106.000000,-00256.000000,-00012.000000
+             Normal   -00000.707107,-00000.707107,+00000.000000
+             TextureU -00000.707107,+00000.707107,+00000.000000
+             TextureV -00000.000000,+00000.000000,-00001.000000
+             Vertex   -00106.000000,-00256.000000,-00012.000000
+             Vertex   -00106.000000,-00256.000000,+00012.000000
+             Vertex   -00256.000000,-00106.000000,+00012.000000
+             Vertex   -00256.000000,-00106.000000,-00012.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=5 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   -00256.000000,-00106.000000,-00012.000000
+             Normal   -00001.000000,+00000.000000,+00000.000000
+             TextureU +00000.000000,+00001.000000,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   -00256.000000,-00106.000000,-00012.000000
+             Vertex   -00256.000000,-00106.000000,+00012.000000
+             Vertex   -00256.000000,+00106.000000,+00012.000000
+             Vertex   -00256.000000,+00106.000000,-00012.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=6 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   -00256.000000,+00106.000000,-00012.000000
+             Normal   -00000.707107,+00000.707107,+00000.000000
+             TextureU +00000.707107,+00000.707107,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   -00256.000000,+00106.000000,-00012.000000
+             Vertex   -00256.000000,+00106.000000,+00012.000000
+             Vertex   -00106.000000,+00256.000000,+00012.000000
+             Vertex   -00106.000000,+00256.000000,-00012.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=7 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   -00106.000000,+00256.000000,-00012.000000
+             Normal   +00000.000000,+00001.000000,+00000.000000
+             TextureU +00001.000000,-00000.000000,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   -00106.000000,+00256.000000,-00012.000000
+             Vertex   -00106.000000,+00256.000000,+00012.000000
+             Vertex   +00106.000000,+00256.000000,+00012.000000
+             Vertex   +00106.000000,+00256.000000,-00012.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Cap Texture=HP2_Master.Floors.greenfloor Link=8 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   -00106.000000,+00256.000000,+00012.000000
+             Normal   +00000.000000,+00000.000000,+00001.000000
+             TextureU +00000.707107,-00000.707107,+00000.000000
+             TextureV +00000.707107,+00000.707107,-00000.000000
+             Vertex   -00106.000000,+00256.000000,+00012.000000
+             Vertex   -00256.000000,+00106.000000,+00012.000000
+             Vertex   -00256.000000,-00106.000000,+00012.000000
+             Vertex   -00106.000000,-00256.000000,+00012.000000
+             Vertex   +00106.000000,-00256.000000,+00012.000000
+             Vertex   +00256.000000,-00106.000000,+00012.000000
+             Vertex   +00256.000000,+00106.000000,+00012.000000
+             Vertex   +00106.000000,+00256.000000,+00012.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Cap Texture=HP2_Master.Floors.greenfloor Link=9 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00106.000000,+00256.000000,-00012.000000
+             Normal   +00000.000000,+00000.000000,-00001.000000
+             TextureU -00000.707107,-00000.707107,-00000.000000
+             TextureV -00000.707107,+00000.707107,+00000.000000
+             Vertex   +00106.000000,+00256.000000,-00012.000000
+             Vertex   +00256.000000,+00106.000000,-00012.000000
+             Vertex   +00256.000000,-00106.000000,-00012.000000
+             Vertex   +00106.000000,-00256.000000,-00012.000000
+             Vertex   -00106.000000,-00256.000000,-00012.000000
+             Vertex   -00256.000000,-00106.000000,-00012.000000
+             Vertex   -00256.000000,+00106.000000,-00012.000000
+             Vertex   -00106.000000,+00256.000000,-00012.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+       End PolyList
+    End Brush
+    Brush=Model'MyLevel.Model172'
+    CollisionRadius=256
+    CollisionWidth=256
+    CollisionHeight=12
+End Actor
+Begin Actor Class=Engine.Brush Name=Brush174
+    CsgOper=CSG_Subtract
+    MainScale=(SheerAxis=SHEER_ZX)
+    PostScale=(SheerAxis=SHEER_ZX)
+    Level=LevelInfo'MyLevel.LevelInfo174'
+    Tag=Brush
+    Region=(Zone=LevelInfo'MyLevel.LevelInfo174',iLeaf=41,ZoneNumber=1)
+    Location=(Z=-37)
+    OldLocation=(Z=-37)
+    Begin Brush Name=Model175
+       Begin PolyList
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=0 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00093.000000,+00224.000000,-00012.000000
+             Normal   +00000.707107,+00000.707107,+00000.000000
+             TextureU +00000.707107,-00000.707107,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   +00093.000000,+00224.000000,-00012.000000
+             Vertex   +00093.000000,+00224.000000,+00012.000000
+             Vertex   +00224.000000,+00093.000000,+00012.000000
+             Vertex   +00224.000000,+00093.000000,-00012.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=1 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00224.000000,+00093.000000,-00012.000000
+             Normal   +00001.000000,+00000.000000,+00000.000000
+             TextureU +00000.000000,-00001.000000,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   +00224.000000,+00093.000000,-00012.000000
+             Vertex   +00224.000000,+00093.000000,+00012.000000
+             Vertex   +00224.000000,-00093.000000,+00012.000000
+             Vertex   +00224.000000,-00093.000000,-00012.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=2 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00224.000000,-00093.000000,-00012.000000
+             Normal   +00000.707107,-00000.707107,+00000.000000
+             TextureU -00000.707107,-00000.707107,-00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   +00224.000000,-00093.000000,-00012.000000
+             Vertex   +00224.000000,-00093.000000,+00012.000000
+             Vertex   +00093.000000,-00224.000000,+00012.000000
+             Vertex   +00093.000000,-00224.000000,-00012.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=3 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00093.000000,-00224.000000,-00012.000000
+             Normal   +00000.000000,-00001.000000,+00000.000000
+             TextureU -00001.000000,-00000.000000,-00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   +00093.000000,-00224.000000,-00012.000000
+             Vertex   +00093.000000,-00224.000000,+00012.000000
+             Vertex   -00093.000000,-00224.000000,+00012.000000
+             Vertex   -00093.000000,-00224.000000,-00012.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=4 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   -00093.000000,-00224.000000,-00012.000000
+             Normal   -00000.707107,-00000.707107,+00000.000000
+             TextureU -00000.707107,+00000.707107,+00000.000000
+             TextureV -00000.000000,+00000.000000,-00001.000000
+             Vertex   -00093.000000,-00224.000000,-00012.000000
+             Vertex   -00093.000000,-00224.000000,+00012.000000
+             Vertex   -00224.000000,-00093.000000,+00012.000000
+             Vertex   -00224.000000,-00093.000000,-00012.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=5 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   -00224.000000,-00093.000000,-00012.000000
+             Normal   -00001.000000,+00000.000000,+00000.000000
+             TextureU +00000.000000,+00001.000000,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   -00224.000000,-00093.000000,-00012.000000
+             Vertex   -00224.000000,-00093.000000,+00012.000000
+             Vertex   -00224.000000,+00093.000000,+00012.000000
+             Vertex   -00224.000000,+00093.000000,-00012.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=6 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   -00224.000000,+00093.000000,-00012.000000
+             Normal   -00000.707107,+00000.707107,+00000.000000
+             TextureU +00000.707107,+00000.707107,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   -00224.000000,+00093.000000,-00012.000000
+             Vertex   -00224.000000,+00093.000000,+00012.000000
+             Vertex   -00093.000000,+00224.000000,+00012.000000
+             Vertex   -00093.000000,+00224.000000,-00012.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=7 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   -00093.000000,+00224.000000,-00012.000000
+             Normal   +00000.000000,+00001.000000,+00000.000000
+             TextureU +00001.000000,-00000.000000,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   -00093.000000,+00224.000000,-00012.000000
+             Vertex   -00093.000000,+00224.000000,+00012.000000
+             Vertex   +00093.000000,+00224.000000,+00012.000000
+             Vertex   +00093.000000,+00224.000000,-00012.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Cap Texture=HP2_Master.Floors.greenfloor Link=8 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   -00093.000000,+00224.000000,+00012.000000
+             Normal   +00000.000000,+00000.000000,+00001.000000
+             TextureU +00000.707107,-00000.707107,+00000.000000
+             TextureV +00000.707107,+00000.707107,-00000.000000
+             Vertex   -00093.000000,+00224.000000,+00012.000000
+             Vertex   -00224.000000,+00093.000000,+00012.000000
+             Vertex   -00224.000000,-00093.000000,+00012.000000
+             Vertex   -00093.000000,-00224.000000,+00012.000000
+             Vertex   +00093.000000,-00224.000000,+00012.000000
+             Vertex   +00224.000000,-00093.000000,+00012.000000
+             Vertex   +00224.000000,+00093.000000,+00012.000000
+             Vertex   +00093.000000,+00224.000000,+00012.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Cap Texture=HP2_Master.Floors.greenfloor Link=9 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00093.000000,+00224.000000,-00012.000000
+             Normal   +00000.000000,+00000.000000,-00001.000000
+             TextureU -00000.707107,-00000.707107,-00000.000000
+             TextureV -00000.707107,+00000.707107,+00000.000000
+             Vertex   +00093.000000,+00224.000000,-00012.000000
+             Vertex   +00224.000000,+00093.000000,-00012.000000
+             Vertex   +00224.000000,-00093.000000,-00012.000000
+             Vertex   +00093.000000,-00224.000000,-00012.000000
+             Vertex   -00093.000000,-00224.000000,-00012.000000
+             Vertex   -00224.000000,-00093.000000,-00012.000000
+             Vertex   -00224.000000,+00093.000000,-00012.000000
+             Vertex   -00093.000000,+00224.000000,-00012.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+       End PolyList
+    End Brush
+    Brush=Model'MyLevel.Model175'
+    CollisionRadius=224
+    CollisionWidth=224
+    CollisionHeight=12
+End Actor
+Begin Actor Class=Engine.Brush Name=Brush177
+    CsgOper=CSG_Subtract
+    MainScale=(SheerAxis=SHEER_ZX)
+    PostScale=(SheerAxis=SHEER_ZX)
+    Level=LevelInfo'MyLevel.LevelInfo174'
+    Tag=Brush
+    Region=(Zone=LevelInfo'MyLevel.LevelInfo174',iLeaf=40,ZoneNumber=1)
+    Location=(Z=-61)
+    OldLocation=(Z=-61)
+    Begin Brush Name=Model178
+       Begin PolyList
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=0 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00080.000000,+00192.000000,-00012.000000
+             Normal   +00000.707107,+00000.707107,+00000.000000
+             TextureU +00000.707107,-00000.707107,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   +00080.000000,+00192.000000,-00012.000000
+             Vertex   +00080.000000,+00192.000000,+00012.000000
+             Vertex   +00192.000000,+00080.000000,+00012.000000
+             Vertex   +00192.000000,+00080.000000,-00012.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=1 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00192.000000,+00080.000000,-00012.000000
+             Normal   +00001.000000,+00000.000000,+00000.000000
+             TextureU +00000.000000,-00001.000000,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   +00192.000000,+00080.000000,-00012.000000
+             Vertex   +00192.000000,+00080.000000,+00012.000000
+             Vertex   +00192.000000,-00080.000000,+00012.000000
+             Vertex   +00192.000000,-00080.000000,-00012.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=2 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00192.000000,-00080.000000,-00012.000000
+             Normal   +00000.707107,-00000.707107,+00000.000000
+             TextureU -00000.707107,-00000.707107,-00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   +00192.000000,-00080.000000,-00012.000000
+             Vertex   +00192.000000,-00080.000000,+00012.000000
+             Vertex   +00080.000000,-00192.000000,+00012.000000
+             Vertex   +00080.000000,-00192.000000,-00012.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=3 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00080.000000,-00192.000000,-00012.000000
+             Normal   +00000.000000,-00001.000000,+00000.000000
+             TextureU -00001.000000,-00000.000000,-00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   +00080.000000,-00192.000000,-00012.000000
+             Vertex   +00080.000000,-00192.000000,+00012.000000
+             Vertex   -00080.000000,-00192.000000,+00012.000000
+             Vertex   -00080.000000,-00192.000000,-00012.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=4 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   -00080.000000,-00192.000000,-00012.000000
+             Normal   -00000.707107,-00000.707107,+00000.000000
+             TextureU -00000.707107,+00000.707107,+00000.000000
+             TextureV -00000.000000,+00000.000000,-00001.000000
+             Vertex   -00080.000000,-00192.000000,-00012.000000
+             Vertex   -00080.000000,-00192.000000,+00012.000000
+             Vertex   -00192.000000,-00080.000000,+00012.000000
+             Vertex   -00192.000000,-00080.000000,-00012.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=5 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   -00192.000000,-00080.000000,-00012.000000
+             Normal   -00001.000000,+00000.000000,+00000.000000
+             TextureU +00000.000000,+00001.000000,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   -00192.000000,-00080.000000,-00012.000000
+             Vertex   -00192.000000,-00080.000000,+00012.000000
+             Vertex   -00192.000000,+00080.000000,+00012.000000
+             Vertex   -00192.000000,+00080.000000,-00012.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=6 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   -00192.000000,+00080.000000,-00012.000000
+             Normal   -00000.707107,+00000.707107,+00000.000000
+             TextureU +00000.707107,+00000.707107,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   -00192.000000,+00080.000000,-00012.000000
+             Vertex   -00192.000000,+00080.000000,+00012.000000
+             Vertex   -00080.000000,+00192.000000,+00012.000000
+             Vertex   -00080.000000,+00192.000000,-00012.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=7 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   -00080.000000,+00192.000000,-00012.000000
+             Normal   +00000.000000,+00001.000000,+00000.000000
+             TextureU +00001.000000,-00000.000000,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   -00080.000000,+00192.000000,-00012.000000
+             Vertex   -00080.000000,+00192.000000,+00012.000000
+             Vertex   +00080.000000,+00192.000000,+00012.000000
+             Vertex   +00080.000000,+00192.000000,-00012.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Cap Texture=HP2_Master.Floors.greenfloor Link=8 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   -00080.000000,+00192.000000,+00012.000000
+             Normal   +00000.000000,+00000.000000,+00001.000000
+             TextureU +00000.707107,-00000.707107,+00000.000000
+             TextureV +00000.707107,+00000.707107,-00000.000000
+             Vertex   -00080.000000,+00192.000000,+00012.000000
+             Vertex   -00192.000000,+00080.000000,+00012.000000
+             Vertex   -00192.000000,-00080.000000,+00012.000000
+             Vertex   -00080.000000,-00192.000000,+00012.000000
+             Vertex   +00080.000000,-00192.000000,+00012.000000
+             Vertex   +00192.000000,-00080.000000,+00012.000000
+             Vertex   +00192.000000,+00080.000000,+00012.000000
+             Vertex   +00080.000000,+00192.000000,+00012.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Cap Texture=HP2_Master.Floors.greenfloor Link=9 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00080.000000,+00192.000000,-00012.000000
+             Normal   +00000.000000,+00000.000000,-00001.000000
+             TextureU -00000.707107,-00000.707107,-00000.000000
+             TextureV -00000.707107,+00000.707107,+00000.000000
+             Vertex   +00080.000000,+00192.000000,-00012.000000
+             Vertex   +00192.000000,+00080.000000,-00012.000000
+             Vertex   +00192.000000,-00080.000000,-00012.000000
+             Vertex   +00080.000000,-00192.000000,-00012.000000
+             Vertex   -00080.000000,-00192.000000,-00012.000000
+             Vertex   -00192.000000,-00080.000000,-00012.000000
+             Vertex   -00192.000000,+00080.000000,-00012.000000
+             Vertex   -00080.000000,+00192.000000,-00012.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+       End PolyList
+    End Brush
+    Brush=Model'MyLevel.Model178'
+    CollisionRadius=192
+    CollisionWidth=192
+    CollisionHeight=12
+End Actor
+Begin Actor Class=Engine.Brush Name=Brush184
+    CsgOper=CSG_Add
+    MainScale=(SheerAxis=SHEER_ZX)
+    PostScale=(SheerAxis=SHEER_ZX)
+    Level=LevelInfo'MyLevel.LevelInfo174'
+    Tag=Brush
+    Region=(Zone=LevelInfo'MyLevel.LevelInfo174',iLeaf=-1)
+    Location=(X=-106,Y=256,Z=111)
+    OldLocation=(X=-106,Y=256,Z=111)
+    Begin Brush Name=Model185
+       Begin PolyList
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=0 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00013.000000,+00032.000000,-00160.000000
+             Normal   +00000.707107,+00000.707107,+00000.000000
+             TextureU +00000.707107,-00000.707107,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   +00013.000000,+00032.000000,-00160.000000
+             Vertex   +00013.000000,+00032.000000,+00160.000000
+             Vertex   +00032.000000,+00013.000000,+00160.000000
+             Vertex   +00032.000000,+00013.000000,-00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=1 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00032.000000,+00013.000000,-00160.000000
+             Normal   +00001.000000,+00000.000000,+00000.000000
+             TextureU +00000.000000,-00001.000000,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   +00032.000000,+00013.000000,-00160.000000
+             Vertex   +00032.000000,+00013.000000,+00160.000000
+             Vertex   +00032.000000,-00013.000000,+00160.000000
+             Vertex   +00032.000000,-00013.000000,-00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=2 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00032.000000,-00013.000000,-00160.000000
+             Normal   +00000.707107,-00000.707107,+00000.000000
+             TextureU -00000.707107,-00000.707107,-00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   +00032.000000,-00013.000000,-00160.000000
+             Vertex   +00032.000000,-00013.000000,+00160.000000
+             Vertex   +00013.000000,-00032.000000,+00160.000000
+             Vertex   +00013.000000,-00032.000000,-00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=3 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00013.000000,-00032.000000,-00160.000000
+             Normal   +00000.000000,-00001.000000,+00000.000000
+             TextureU -00001.000000,-00000.000000,-00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   +00013.000000,-00032.000000,-00160.000000
+             Vertex   +00013.000000,-00032.000000,+00160.000000
+             Vertex   -00013.000000,-00032.000000,+00160.000000
+             Vertex   -00013.000000,-00032.000000,-00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=4 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   -00013.000000,-00032.000000,-00160.000000
+             Normal   -00000.707107,-00000.707107,+00000.000000
+             TextureU -00000.707107,+00000.707107,+00000.000000
+             TextureV -00000.000000,+00000.000000,-00001.000000
+             Vertex   -00013.000000,-00032.000000,-00160.000000
+             Vertex   -00013.000000,-00032.000000,+00160.000000
+             Vertex   -00032.000000,-00013.000000,+00160.000000
+             Vertex   -00032.000000,-00013.000000,-00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=5 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   -00032.000000,-00013.000000,-00160.000000
+             Normal   -00001.000000,+00000.000000,+00000.000000
+             TextureU +00000.000000,+00001.000000,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   -00032.000000,-00013.000000,-00160.000000
+             Vertex   -00032.000000,-00013.000000,+00160.000000
+             Vertex   -00032.000000,+00013.000000,+00160.000000
+             Vertex   -00032.000000,+00013.000000,-00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=6 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   -00032.000000,+00013.000000,-00160.000000
+             Normal   -00000.707107,+00000.707107,+00000.000000
+             TextureU +00000.707107,+00000.707107,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   -00032.000000,+00013.000000,-00160.000000
+             Vertex   -00032.000000,+00013.000000,+00160.000000
+             Vertex   -00013.000000,+00032.000000,+00160.000000
+             Vertex   -00013.000000,+00032.000000,-00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=7 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   -00013.000000,+00032.000000,-00160.000000
+             Normal   +00000.000000,+00001.000000,+00000.000000
+             TextureU +00001.000000,-00000.000000,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   -00013.000000,+00032.000000,-00160.000000
+             Vertex   -00013.000000,+00032.000000,+00160.000000
+             Vertex   +00013.000000,+00032.000000,+00160.000000
+             Vertex   +00013.000000,+00032.000000,-00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Cap Texture=HP2_Master.Floors.greenfloor Link=8 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   -00013.000000,+00032.000000,+00160.000000
+             Normal   +00000.000000,+00000.000000,+00001.000000
+             TextureU +00000.707107,-00000.707107,+00000.000000
+             TextureV +00000.707107,+00000.707107,-00000.000000
+             Vertex   -00013.000000,+00032.000000,+00160.000000
+             Vertex   -00032.000000,+00013.000000,+00160.000000
+             Vertex   -00032.000000,-00013.000000,+00160.000000
+             Vertex   -00013.000000,-00032.000000,+00160.000000
+             Vertex   +00013.000000,-00032.000000,+00160.000000
+             Vertex   +00032.000000,-00013.000000,+00160.000000
+             Vertex   +00032.000000,+00013.000000,+00160.000000
+             Vertex   +00013.000000,+00032.000000,+00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Cap Texture=HP2_Master.Floors.greenfloor Link=9 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00013.000000,+00032.000000,-00160.000000
+             Normal   +00000.000000,+00000.000000,-00001.000000
+             TextureU -00000.707107,-00000.707107,-00000.000000
+             TextureV -00000.707107,+00000.707107,+00000.000000
+             Vertex   +00013.000000,+00032.000000,-00160.000000
+             Vertex   +00032.000000,+00013.000000,-00160.000000
+             Vertex   +00032.000000,-00013.000000,-00160.000000
+             Vertex   +00013.000000,-00032.000000,-00160.000000
+             Vertex   -00013.000000,-00032.000000,-00160.000000
+             Vertex   -00032.000000,-00013.000000,-00160.000000
+             Vertex   -00032.000000,+00013.000000,-00160.000000
+             Vertex   -00013.000000,+00032.000000,-00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+       End PolyList
+    End Brush
+    Brush=Model'MyLevel.Model185'
+    CollisionRadius=32
+    CollisionWidth=32
+    CollisionHeight=160
+End Actor
+Begin Actor Class=Engine.Brush Name=Brush187
+    CsgOper=CSG_Add
+    MainScale=(SheerAxis=SHEER_ZX)
+    PostScale=(SheerAxis=SHEER_ZX)
+    Level=LevelInfo'MyLevel.LevelInfo174'
+    Tag=Brush
+    Region=(Zone=LevelInfo'MyLevel.LevelInfo174',iLeaf=-1)
+    Location=(X=106,Y=256,Z=111)
+    OldLocation=(X=106,Y=256,Z=111)
+    Begin Brush Name=Model188
+       Begin PolyList
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=0 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00013.000000,+00032.000000,-00160.000000
+             Normal   +00000.707107,+00000.707107,+00000.000000
+             TextureU +00000.707107,-00000.707107,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   +00013.000000,+00032.000000,-00160.000000
+             Vertex   +00013.000000,+00032.000000,+00160.000000
+             Vertex   +00032.000000,+00013.000000,+00160.000000
+             Vertex   +00032.000000,+00013.000000,-00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=1 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00032.000000,+00013.000000,-00160.000000
+             Normal   +00001.000000,+00000.000000,+00000.000000
+             TextureU +00000.000000,-00001.000000,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   +00032.000000,+00013.000000,-00160.000000
+             Vertex   +00032.000000,+00013.000000,+00160.000000
+             Vertex   +00032.000000,-00013.000000,+00160.000000
+             Vertex   +00032.000000,-00013.000000,-00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=2 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00032.000000,-00013.000000,-00160.000000
+             Normal   +00000.707107,-00000.707107,+00000.000000
+             TextureU -00000.707107,-00000.707107,-00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   +00032.000000,-00013.000000,-00160.000000
+             Vertex   +00032.000000,-00013.000000,+00160.000000
+             Vertex   +00013.000000,-00032.000000,+00160.000000
+             Vertex   +00013.000000,-00032.000000,-00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=3 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00013.000000,-00032.000000,-00160.000000
+             Normal   +00000.000000,-00001.000000,+00000.000000
+             TextureU -00001.000000,-00000.000000,-00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   +00013.000000,-00032.000000,-00160.000000
+             Vertex   +00013.000000,-00032.000000,+00160.000000
+             Vertex   -00013.000000,-00032.000000,+00160.000000
+             Vertex   -00013.000000,-00032.000000,-00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=4 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   -00013.000000,-00032.000000,-00160.000000
+             Normal   -00000.707107,-00000.707107,+00000.000000
+             TextureU -00000.707107,+00000.707107,+00000.000000
+             TextureV -00000.000000,+00000.000000,-00001.000000
+             Vertex   -00013.000000,-00032.000000,-00160.000000
+             Vertex   -00013.000000,-00032.000000,+00160.000000
+             Vertex   -00032.000000,-00013.000000,+00160.000000
+             Vertex   -00032.000000,-00013.000000,-00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=5 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   -00032.000000,-00013.000000,-00160.000000
+             Normal   -00001.000000,+00000.000000,+00000.000000
+             TextureU +00000.000000,+00001.000000,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   -00032.000000,-00013.000000,-00160.000000
+             Vertex   -00032.000000,-00013.000000,+00160.000000
+             Vertex   -00032.000000,+00013.000000,+00160.000000
+             Vertex   -00032.000000,+00013.000000,-00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=6 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   -00032.000000,+00013.000000,-00160.000000
+             Normal   -00000.707107,+00000.707107,+00000.000000
+             TextureU +00000.707107,+00000.707107,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   -00032.000000,+00013.000000,-00160.000000
+             Vertex   -00032.000000,+00013.000000,+00160.000000
+             Vertex   -00013.000000,+00032.000000,+00160.000000
+             Vertex   -00013.000000,+00032.000000,-00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=7 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   -00013.000000,+00032.000000,-00160.000000
+             Normal   +00000.000000,+00001.000000,+00000.000000
+             TextureU +00001.000000,-00000.000000,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   -00013.000000,+00032.000000,-00160.000000
+             Vertex   -00013.000000,+00032.000000,+00160.000000
+             Vertex   +00013.000000,+00032.000000,+00160.000000
+             Vertex   +00013.000000,+00032.000000,-00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Cap Texture=HP2_Master.Floors.greenfloor Link=8 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   -00013.000000,+00032.000000,+00160.000000
+             Normal   +00000.000000,+00000.000000,+00001.000000
+             TextureU +00000.707107,-00000.707107,+00000.000000
+             TextureV +00000.707107,+00000.707107,-00000.000000
+             Vertex   -00013.000000,+00032.000000,+00160.000000
+             Vertex   -00032.000000,+00013.000000,+00160.000000
+             Vertex   -00032.000000,-00013.000000,+00160.000000
+             Vertex   -00013.000000,-00032.000000,+00160.000000
+             Vertex   +00013.000000,-00032.000000,+00160.000000
+             Vertex   +00032.000000,-00013.000000,+00160.000000
+             Vertex   +00032.000000,+00013.000000,+00160.000000
+             Vertex   +00013.000000,+00032.000000,+00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Cap Texture=HP2_Master.Floors.greenfloor Link=9 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00013.000000,+00032.000000,-00160.000000
+             Normal   +00000.000000,+00000.000000,-00001.000000
+             TextureU -00000.707107,-00000.707107,-00000.000000
+             TextureV -00000.707107,+00000.707107,+00000.000000
+             Vertex   +00013.000000,+00032.000000,-00160.000000
+             Vertex   +00032.000000,+00013.000000,-00160.000000
+             Vertex   +00032.000000,-00013.000000,-00160.000000
+             Vertex   +00013.000000,-00032.000000,-00160.000000
+             Vertex   -00013.000000,-00032.000000,-00160.000000
+             Vertex   -00032.000000,-00013.000000,-00160.000000
+             Vertex   -00032.000000,+00013.000000,-00160.000000
+             Vertex   -00013.000000,+00032.000000,-00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+       End PolyList
+    End Brush
+    Brush=Model'MyLevel.Model188'
+    CollisionRadius=32
+    CollisionWidth=32
+    CollisionHeight=160
+End Actor
+Begin Actor Class=Engine.Brush Name=Brush190
+    CsgOper=CSG_Add
+    MainScale=(SheerAxis=SHEER_ZX)
+    PostScale=(SheerAxis=SHEER_ZX)
+    Level=LevelInfo'MyLevel.LevelInfo174'
+    Tag=Brush
+    Region=(Zone=LevelInfo'MyLevel.LevelInfo174',iLeaf=-1)
+    Location=(X=-256,Y=106,Z=111)
+    OldLocation=(X=-256,Y=106,Z=111)
+    Begin Brush Name=Model191
+       Begin PolyList
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=0 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00013.000000,+00032.000000,-00160.000000
+             Normal   +00000.707107,+00000.707107,+00000.000000
+             TextureU +00000.707107,-00000.707107,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   +00013.000000,+00032.000000,-00160.000000
+             Vertex   +00013.000000,+00032.000000,+00160.000000
+             Vertex   +00032.000000,+00013.000000,+00160.000000
+             Vertex   +00032.000000,+00013.000000,-00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=1 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00032.000000,+00013.000000,-00160.000000
+             Normal   +00001.000000,+00000.000000,+00000.000000
+             TextureU +00000.000000,-00001.000000,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   +00032.000000,+00013.000000,-00160.000000
+             Vertex   +00032.000000,+00013.000000,+00160.000000
+             Vertex   +00032.000000,-00013.000000,+00160.000000
+             Vertex   +00032.000000,-00013.000000,-00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=2 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00032.000000,-00013.000000,-00160.000000
+             Normal   +00000.707107,-00000.707107,+00000.000000
+             TextureU -00000.707107,-00000.707107,-00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   +00032.000000,-00013.000000,-00160.000000
+             Vertex   +00032.000000,-00013.000000,+00160.000000
+             Vertex   +00013.000000,-00032.000000,+00160.000000
+             Vertex   +00013.000000,-00032.000000,-00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=3 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00013.000000,-00032.000000,-00160.000000
+             Normal   +00000.000000,-00001.000000,+00000.000000
+             TextureU -00001.000000,-00000.000000,-00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   +00013.000000,-00032.000000,-00160.000000
+             Vertex   +00013.000000,-00032.000000,+00160.000000
+             Vertex   -00013.000000,-00032.000000,+00160.000000
+             Vertex   -00013.000000,-00032.000000,-00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=4 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   -00013.000000,-00032.000000,-00160.000000
+             Normal   -00000.707107,-00000.707107,+00000.000000
+             TextureU -00000.707107,+00000.707107,+00000.000000
+             TextureV -00000.000000,+00000.000000,-00001.000000
+             Vertex   -00013.000000,-00032.000000,-00160.000000
+             Vertex   -00013.000000,-00032.000000,+00160.000000
+             Vertex   -00032.000000,-00013.000000,+00160.000000
+             Vertex   -00032.000000,-00013.000000,-00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=5 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   -00032.000000,-00013.000000,-00160.000000
+             Normal   -00001.000000,+00000.000000,+00000.000000
+             TextureU +00000.000000,+00001.000000,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   -00032.000000,-00013.000000,-00160.000000
+             Vertex   -00032.000000,-00013.000000,+00160.000000
+             Vertex   -00032.000000,+00013.000000,+00160.000000
+             Vertex   -00032.000000,+00013.000000,-00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=6 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   -00032.000000,+00013.000000,-00160.000000
+             Normal   -00000.707107,+00000.707107,+00000.000000
+             TextureU +00000.707107,+00000.707107,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   -00032.000000,+00013.000000,-00160.000000
+             Vertex   -00032.000000,+00013.000000,+00160.000000
+             Vertex   -00013.000000,+00032.000000,+00160.000000
+             Vertex   -00013.000000,+00032.000000,-00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=7 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   -00013.000000,+00032.000000,-00160.000000
+             Normal   +00000.000000,+00001.000000,+00000.000000
+             TextureU +00001.000000,-00000.000000,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   -00013.000000,+00032.000000,-00160.000000
+             Vertex   -00013.000000,+00032.000000,+00160.000000
+             Vertex   +00013.000000,+00032.000000,+00160.000000
+             Vertex   +00013.000000,+00032.000000,-00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Cap Texture=HP2_Master.Floors.greenfloor Link=8 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   -00013.000000,+00032.000000,+00160.000000
+             Normal   +00000.000000,+00000.000000,+00001.000000
+             TextureU +00000.707107,-00000.707107,+00000.000000
+             TextureV +00000.707107,+00000.707107,-00000.000000
+             Vertex   -00013.000000,+00032.000000,+00160.000000
+             Vertex   -00032.000000,+00013.000000,+00160.000000
+             Vertex   -00032.000000,-00013.000000,+00160.000000
+             Vertex   -00013.000000,-00032.000000,+00160.000000
+             Vertex   +00013.000000,-00032.000000,+00160.000000
+             Vertex   +00032.000000,-00013.000000,+00160.000000
+             Vertex   +00032.000000,+00013.000000,+00160.000000
+             Vertex   +00013.000000,+00032.000000,+00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Cap Texture=HP2_Master.Floors.greenfloor Link=9 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00013.000000,+00032.000000,-00160.000000
+             Normal   +00000.000000,+00000.000000,-00001.000000
+             TextureU -00000.707107,-00000.707107,-00000.000000
+             TextureV -00000.707107,+00000.707107,+00000.000000
+             Vertex   +00013.000000,+00032.000000,-00160.000000
+             Vertex   +00032.000000,+00013.000000,-00160.000000
+             Vertex   +00032.000000,-00013.000000,-00160.000000
+             Vertex   +00013.000000,-00032.000000,-00160.000000
+             Vertex   -00013.000000,-00032.000000,-00160.000000
+             Vertex   -00032.000000,-00013.000000,-00160.000000
+             Vertex   -00032.000000,+00013.000000,-00160.000000
+             Vertex   -00013.000000,+00032.000000,-00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+       End PolyList
+    End Brush
+    Brush=Model'MyLevel.Model191'
+    CollisionRadius=32
+    CollisionWidth=32
+    CollisionHeight=160
+End Actor
+Begin Actor Class=Engine.Brush Name=Brush193
+    CsgOper=CSG_Add
+    MainScale=(SheerAxis=SHEER_ZX)
+    PostScale=(SheerAxis=SHEER_ZX)
+    Level=LevelInfo'MyLevel.LevelInfo174'
+    Tag=Brush
+    Region=(Zone=LevelInfo'MyLevel.LevelInfo174',iLeaf=-1)
+    Location=(X=-256,Y=-106,Z=111)
+    OldLocation=(X=-256,Y=-106,Z=111)
+    Begin Brush Name=Model194
+       Begin PolyList
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=0 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00013.000000,+00032.000000,-00160.000000
+             Normal   +00000.707107,+00000.707107,+00000.000000
+             TextureU +00000.707107,-00000.707107,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   +00013.000000,+00032.000000,-00160.000000
+             Vertex   +00013.000000,+00032.000000,+00160.000000
+             Vertex   +00032.000000,+00013.000000,+00160.000000
+             Vertex   +00032.000000,+00013.000000,-00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=1 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00032.000000,+00013.000000,-00160.000000
+             Normal   +00001.000000,+00000.000000,+00000.000000
+             TextureU +00000.000000,-00001.000000,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   +00032.000000,+00013.000000,-00160.000000
+             Vertex   +00032.000000,+00013.000000,+00160.000000
+             Vertex   +00032.000000,-00013.000000,+00160.000000
+             Vertex   +00032.000000,-00013.000000,-00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=2 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00032.000000,-00013.000000,-00160.000000
+             Normal   +00000.707107,-00000.707107,+00000.000000
+             TextureU -00000.707107,-00000.707107,-00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   +00032.000000,-00013.000000,-00160.000000
+             Vertex   +00032.000000,-00013.000000,+00160.000000
+             Vertex   +00013.000000,-00032.000000,+00160.000000
+             Vertex   +00013.000000,-00032.000000,-00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=3 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00013.000000,-00032.000000,-00160.000000
+             Normal   +00000.000000,-00001.000000,+00000.000000
+             TextureU -00001.000000,-00000.000000,-00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   +00013.000000,-00032.000000,-00160.000000
+             Vertex   +00013.000000,-00032.000000,+00160.000000
+             Vertex   -00013.000000,-00032.000000,+00160.000000
+             Vertex   -00013.000000,-00032.000000,-00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=4 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   -00013.000000,-00032.000000,-00160.000000
+             Normal   -00000.707107,-00000.707107,+00000.000000
+             TextureU -00000.707107,+00000.707107,+00000.000000
+             TextureV -00000.000000,+00000.000000,-00001.000000
+             Vertex   -00013.000000,-00032.000000,-00160.000000
+             Vertex   -00013.000000,-00032.000000,+00160.000000
+             Vertex   -00032.000000,-00013.000000,+00160.000000
+             Vertex   -00032.000000,-00013.000000,-00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=5 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   -00032.000000,-00013.000000,-00160.000000
+             Normal   -00001.000000,+00000.000000,+00000.000000
+             TextureU +00000.000000,+00001.000000,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   -00032.000000,-00013.000000,-00160.000000
+             Vertex   -00032.000000,-00013.000000,+00160.000000
+             Vertex   -00032.000000,+00013.000000,+00160.000000
+             Vertex   -00032.000000,+00013.000000,-00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=6 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   -00032.000000,+00013.000000,-00160.000000
+             Normal   -00000.707107,+00000.707107,+00000.000000
+             TextureU +00000.707107,+00000.707107,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   -00032.000000,+00013.000000,-00160.000000
+             Vertex   -00032.000000,+00013.000000,+00160.000000
+             Vertex   -00013.000000,+00032.000000,+00160.000000
+             Vertex   -00013.000000,+00032.000000,-00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=7 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   -00013.000000,+00032.000000,-00160.000000
+             Normal   +00000.000000,+00001.000000,+00000.000000
+             TextureU +00001.000000,-00000.000000,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   -00013.000000,+00032.000000,-00160.000000
+             Vertex   -00013.000000,+00032.000000,+00160.000000
+             Vertex   +00013.000000,+00032.000000,+00160.000000
+             Vertex   +00013.000000,+00032.000000,-00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Cap Texture=HP2_Master.Floors.greenfloor Link=8 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   -00013.000000,+00032.000000,+00160.000000
+             Normal   +00000.000000,+00000.000000,+00001.000000
+             TextureU +00000.707107,-00000.707107,+00000.000000
+             TextureV +00000.707107,+00000.707107,-00000.000000
+             Vertex   -00013.000000,+00032.000000,+00160.000000
+             Vertex   -00032.000000,+00013.000000,+00160.000000
+             Vertex   -00032.000000,-00013.000000,+00160.000000
+             Vertex   -00013.000000,-00032.000000,+00160.000000
+             Vertex   +00013.000000,-00032.000000,+00160.000000
+             Vertex   +00032.000000,-00013.000000,+00160.000000
+             Vertex   +00032.000000,+00013.000000,+00160.000000
+             Vertex   +00013.000000,+00032.000000,+00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Cap Texture=HP2_Master.Floors.greenfloor Link=9 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00013.000000,+00032.000000,-00160.000000
+             Normal   +00000.000000,+00000.000000,-00001.000000
+             TextureU -00000.707107,-00000.707107,-00000.000000
+             TextureV -00000.707107,+00000.707107,+00000.000000
+             Vertex   +00013.000000,+00032.000000,-00160.000000
+             Vertex   +00032.000000,+00013.000000,-00160.000000
+             Vertex   +00032.000000,-00013.000000,-00160.000000
+             Vertex   +00013.000000,-00032.000000,-00160.000000
+             Vertex   -00013.000000,-00032.000000,-00160.000000
+             Vertex   -00032.000000,-00013.000000,-00160.000000
+             Vertex   -00032.000000,+00013.000000,-00160.000000
+             Vertex   -00013.000000,+00032.000000,-00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+       End PolyList
+    End Brush
+    Brush=Model'MyLevel.Model194'
+    CollisionRadius=32
+    CollisionWidth=32
+    CollisionHeight=160
+End Actor
+Begin Actor Class=Engine.Brush Name=Brush196
+    CsgOper=CSG_Add
+    MainScale=(SheerAxis=SHEER_ZX)
+    PostScale=(SheerAxis=SHEER_ZX)
+    Level=LevelInfo'MyLevel.LevelInfo174'
+    Tag=Brush
+    Region=(Zone=LevelInfo'MyLevel.LevelInfo174',iLeaf=-1)
+    Location=(X=-106,Y=-256,Z=111)
+    OldLocation=(X=-106,Y=-256,Z=111)
+    Begin Brush Name=Model197
+       Begin PolyList
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=0 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00013.000000,+00032.000000,-00160.000000
+             Normal   +00000.707107,+00000.707107,+00000.000000
+             TextureU +00000.707107,-00000.707107,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   +00013.000000,+00032.000000,-00160.000000
+             Vertex   +00013.000000,+00032.000000,+00160.000000
+             Vertex   +00032.000000,+00013.000000,+00160.000000
+             Vertex   +00032.000000,+00013.000000,-00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=1 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00032.000000,+00013.000000,-00160.000000
+             Normal   +00001.000000,+00000.000000,+00000.000000
+             TextureU +00000.000000,-00001.000000,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   +00032.000000,+00013.000000,-00160.000000
+             Vertex   +00032.000000,+00013.000000,+00160.000000
+             Vertex   +00032.000000,-00013.000000,+00160.000000
+             Vertex   +00032.000000,-00013.000000,-00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=2 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00032.000000,-00013.000000,-00160.000000
+             Normal   +00000.707107,-00000.707107,+00000.000000
+             TextureU -00000.707107,-00000.707107,-00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   +00032.000000,-00013.000000,-00160.000000
+             Vertex   +00032.000000,-00013.000000,+00160.000000
+             Vertex   +00013.000000,-00032.000000,+00160.000000
+             Vertex   +00013.000000,-00032.000000,-00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=3 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00013.000000,-00032.000000,-00160.000000
+             Normal   +00000.000000,-00001.000000,+00000.000000
+             TextureU -00001.000000,-00000.000000,-00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   +00013.000000,-00032.000000,-00160.000000
+             Vertex   +00013.000000,-00032.000000,+00160.000000
+             Vertex   -00013.000000,-00032.000000,+00160.000000
+             Vertex   -00013.000000,-00032.000000,-00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=4 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   -00013.000000,-00032.000000,-00160.000000
+             Normal   -00000.707107,-00000.707107,+00000.000000
+             TextureU -00000.707107,+00000.707107,+00000.000000
+             TextureV -00000.000000,+00000.000000,-00001.000000
+             Vertex   -00013.000000,-00032.000000,-00160.000000
+             Vertex   -00013.000000,-00032.000000,+00160.000000
+             Vertex   -00032.000000,-00013.000000,+00160.000000
+             Vertex   -00032.000000,-00013.000000,-00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=5 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   -00032.000000,-00013.000000,-00160.000000
+             Normal   -00001.000000,+00000.000000,+00000.000000
+             TextureU +00000.000000,+00001.000000,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   -00032.000000,-00013.000000,-00160.000000
+             Vertex   -00032.000000,-00013.000000,+00160.000000
+             Vertex   -00032.000000,+00013.000000,+00160.000000
+             Vertex   -00032.000000,+00013.000000,-00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=6 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   -00032.000000,+00013.000000,-00160.000000
+             Normal   -00000.707107,+00000.707107,+00000.000000
+             TextureU +00000.707107,+00000.707107,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   -00032.000000,+00013.000000,-00160.000000
+             Vertex   -00032.000000,+00013.000000,+00160.000000
+             Vertex   -00013.000000,+00032.000000,+00160.000000
+             Vertex   -00013.000000,+00032.000000,-00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=7 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   -00013.000000,+00032.000000,-00160.000000
+             Normal   +00000.000000,+00001.000000,+00000.000000
+             TextureU +00001.000000,-00000.000000,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   -00013.000000,+00032.000000,-00160.000000
+             Vertex   -00013.000000,+00032.000000,+00160.000000
+             Vertex   +00013.000000,+00032.000000,+00160.000000
+             Vertex   +00013.000000,+00032.000000,-00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Cap Texture=HP2_Master.Floors.greenfloor Link=8 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   -00013.000000,+00032.000000,+00160.000000
+             Normal   +00000.000000,+00000.000000,+00001.000000
+             TextureU +00000.707107,-00000.707107,+00000.000000
+             TextureV +00000.707107,+00000.707107,-00000.000000
+             Vertex   -00013.000000,+00032.000000,+00160.000000
+             Vertex   -00032.000000,+00013.000000,+00160.000000
+             Vertex   -00032.000000,-00013.000000,+00160.000000
+             Vertex   -00013.000000,-00032.000000,+00160.000000
+             Vertex   +00013.000000,-00032.000000,+00160.000000
+             Vertex   +00032.000000,-00013.000000,+00160.000000
+             Vertex   +00032.000000,+00013.000000,+00160.000000
+             Vertex   +00013.000000,+00032.000000,+00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Cap Texture=HP2_Master.Floors.greenfloor Link=9 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00013.000000,+00032.000000,-00160.000000
+             Normal   +00000.000000,+00000.000000,-00001.000000
+             TextureU -00000.707107,-00000.707107,-00000.000000
+             TextureV -00000.707107,+00000.707107,+00000.000000
+             Vertex   +00013.000000,+00032.000000,-00160.000000
+             Vertex   +00032.000000,+00013.000000,-00160.000000
+             Vertex   +00032.000000,-00013.000000,-00160.000000
+             Vertex   +00013.000000,-00032.000000,-00160.000000
+             Vertex   -00013.000000,-00032.000000,-00160.000000
+             Vertex   -00032.000000,-00013.000000,-00160.000000
+             Vertex   -00032.000000,+00013.000000,-00160.000000
+             Vertex   -00013.000000,+00032.000000,-00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+       End PolyList
+    End Brush
+    Brush=Model'MyLevel.Model197'
+    CollisionRadius=32
+    CollisionWidth=32
+    CollisionHeight=160
+End Actor
+Begin Actor Class=Engine.Brush Name=Brush199
+    CsgOper=CSG_Add
+    MainScale=(SheerAxis=SHEER_ZX)
+    PostScale=(SheerAxis=SHEER_ZX)
+    Level=LevelInfo'MyLevel.LevelInfo174'
+    Tag=Brush
+    Region=(Zone=LevelInfo'MyLevel.LevelInfo174',iLeaf=-1)
+    Location=(X=106,Y=-256,Z=111)
+    OldLocation=(X=106,Y=-256,Z=111)
+    Begin Brush Name=Model200
+       Begin PolyList
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=0 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00013.000000,+00032.000000,-00160.000000
+             Normal   +00000.707107,+00000.707107,+00000.000000
+             TextureU +00000.707107,-00000.707107,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   +00013.000000,+00032.000000,-00160.000000
+             Vertex   +00013.000000,+00032.000000,+00160.000000
+             Vertex   +00032.000000,+00013.000000,+00160.000000
+             Vertex   +00032.000000,+00013.000000,-00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=1 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00032.000000,+00013.000000,-00160.000000
+             Normal   +00001.000000,+00000.000000,+00000.000000
+             TextureU +00000.000000,-00001.000000,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   +00032.000000,+00013.000000,-00160.000000
+             Vertex   +00032.000000,+00013.000000,+00160.000000
+             Vertex   +00032.000000,-00013.000000,+00160.000000
+             Vertex   +00032.000000,-00013.000000,-00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=2 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00032.000000,-00013.000000,-00160.000000
+             Normal   +00000.707107,-00000.707107,+00000.000000
+             TextureU -00000.707107,-00000.707107,-00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   +00032.000000,-00013.000000,-00160.000000
+             Vertex   +00032.000000,-00013.000000,+00160.000000
+             Vertex   +00013.000000,-00032.000000,+00160.000000
+             Vertex   +00013.000000,-00032.000000,-00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=3 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00013.000000,-00032.000000,-00160.000000
+             Normal   +00000.000000,-00001.000000,+00000.000000
+             TextureU -00001.000000,-00000.000000,-00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   +00013.000000,-00032.000000,-00160.000000
+             Vertex   +00013.000000,-00032.000000,+00160.000000
+             Vertex   -00013.000000,-00032.000000,+00160.000000
+             Vertex   -00013.000000,-00032.000000,-00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=4 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   -00013.000000,-00032.000000,-00160.000000
+             Normal   -00000.707107,-00000.707107,+00000.000000
+             TextureU -00000.707107,+00000.707107,+00000.000000
+             TextureV -00000.000000,+00000.000000,-00001.000000
+             Vertex   -00013.000000,-00032.000000,-00160.000000
+             Vertex   -00013.000000,-00032.000000,+00160.000000
+             Vertex   -00032.000000,-00013.000000,+00160.000000
+             Vertex   -00032.000000,-00013.000000,-00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=5 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   -00032.000000,-00013.000000,-00160.000000
+             Normal   -00001.000000,+00000.000000,+00000.000000
+             TextureU +00000.000000,+00001.000000,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   -00032.000000,-00013.000000,-00160.000000
+             Vertex   -00032.000000,-00013.000000,+00160.000000
+             Vertex   -00032.000000,+00013.000000,+00160.000000
+             Vertex   -00032.000000,+00013.000000,-00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=6 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   -00032.000000,+00013.000000,-00160.000000
+             Normal   -00000.707107,+00000.707107,+00000.000000
+             TextureU +00000.707107,+00000.707107,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   -00032.000000,+00013.000000,-00160.000000
+             Vertex   -00032.000000,+00013.000000,+00160.000000
+             Vertex   -00013.000000,+00032.000000,+00160.000000
+             Vertex   -00013.000000,+00032.000000,-00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=7 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   -00013.000000,+00032.000000,-00160.000000
+             Normal   +00000.000000,+00001.000000,+00000.000000
+             TextureU +00001.000000,-00000.000000,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   -00013.000000,+00032.000000,-00160.000000
+             Vertex   -00013.000000,+00032.000000,+00160.000000
+             Vertex   +00013.000000,+00032.000000,+00160.000000
+             Vertex   +00013.000000,+00032.000000,-00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Cap Texture=HP2_Master.Floors.greenfloor Link=8 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   -00013.000000,+00032.000000,+00160.000000
+             Normal   +00000.000000,+00000.000000,+00001.000000
+             TextureU +00000.707107,-00000.707107,+00000.000000
+             TextureV +00000.707107,+00000.707107,-00000.000000
+             Vertex   -00013.000000,+00032.000000,+00160.000000
+             Vertex   -00032.000000,+00013.000000,+00160.000000
+             Vertex   -00032.000000,-00013.000000,+00160.000000
+             Vertex   -00013.000000,-00032.000000,+00160.000000
+             Vertex   +00013.000000,-00032.000000,+00160.000000
+             Vertex   +00032.000000,-00013.000000,+00160.000000
+             Vertex   +00032.000000,+00013.000000,+00160.000000
+             Vertex   +00013.000000,+00032.000000,+00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Cap Texture=HP2_Master.Floors.greenfloor Link=9 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00013.000000,+00032.000000,-00160.000000
+             Normal   +00000.000000,+00000.000000,-00001.000000
+             TextureU -00000.707107,-00000.707107,-00000.000000
+             TextureV -00000.707107,+00000.707107,+00000.000000
+             Vertex   +00013.000000,+00032.000000,-00160.000000
+             Vertex   +00032.000000,+00013.000000,-00160.000000
+             Vertex   +00032.000000,-00013.000000,-00160.000000
+             Vertex   +00013.000000,-00032.000000,-00160.000000
+             Vertex   -00013.000000,-00032.000000,-00160.000000
+             Vertex   -00032.000000,-00013.000000,-00160.000000
+             Vertex   -00032.000000,+00013.000000,-00160.000000
+             Vertex   -00013.000000,+00032.000000,-00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+       End PolyList
+    End Brush
+    Brush=Model'MyLevel.Model200'
+    CollisionRadius=32
+    CollisionWidth=32
+    CollisionHeight=160
+End Actor
+Begin Actor Class=Engine.Brush Name=Brush202
+    CsgOper=CSG_Add
+    MainScale=(SheerAxis=SHEER_ZX)
+    PostScale=(SheerAxis=SHEER_ZX)
+    Level=LevelInfo'MyLevel.LevelInfo174'
+    Tag=Brush
+    Region=(Zone=LevelInfo'MyLevel.LevelInfo174',iLeaf=-1)
+    Location=(X=256,Y=-106,Z=111)
+    OldLocation=(X=256,Y=-106,Z=111)
+    Begin Brush Name=Model203
+       Begin PolyList
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=0 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00013.000000,+00032.000000,-00160.000000
+             Normal   +00000.707107,+00000.707107,+00000.000000
+             TextureU +00000.707107,-00000.707107,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   +00013.000000,+00032.000000,-00160.000000
+             Vertex   +00013.000000,+00032.000000,+00160.000000
+             Vertex   +00032.000000,+00013.000000,+00160.000000
+             Vertex   +00032.000000,+00013.000000,-00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=1 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00032.000000,+00013.000000,-00160.000000
+             Normal   +00001.000000,+00000.000000,+00000.000000
+             TextureU +00000.000000,-00001.000000,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   +00032.000000,+00013.000000,-00160.000000
+             Vertex   +00032.000000,+00013.000000,+00160.000000
+             Vertex   +00032.000000,-00013.000000,+00160.000000
+             Vertex   +00032.000000,-00013.000000,-00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=2 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00032.000000,-00013.000000,-00160.000000
+             Normal   +00000.707107,-00000.707107,+00000.000000
+             TextureU -00000.707107,-00000.707107,-00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   +00032.000000,-00013.000000,-00160.000000
+             Vertex   +00032.000000,-00013.000000,+00160.000000
+             Vertex   +00013.000000,-00032.000000,+00160.000000
+             Vertex   +00013.000000,-00032.000000,-00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=3 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00013.000000,-00032.000000,-00160.000000
+             Normal   +00000.000000,-00001.000000,+00000.000000
+             TextureU -00001.000000,-00000.000000,-00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   +00013.000000,-00032.000000,-00160.000000
+             Vertex   +00013.000000,-00032.000000,+00160.000000
+             Vertex   -00013.000000,-00032.000000,+00160.000000
+             Vertex   -00013.000000,-00032.000000,-00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=4 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   -00013.000000,-00032.000000,-00160.000000
+             Normal   -00000.707107,-00000.707107,+00000.000000
+             TextureU -00000.707107,+00000.707107,+00000.000000
+             TextureV -00000.000000,+00000.000000,-00001.000000
+             Vertex   -00013.000000,-00032.000000,-00160.000000
+             Vertex   -00013.000000,-00032.000000,+00160.000000
+             Vertex   -00032.000000,-00013.000000,+00160.000000
+             Vertex   -00032.000000,-00013.000000,-00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=5 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   -00032.000000,-00013.000000,-00160.000000
+             Normal   -00001.000000,+00000.000000,+00000.000000
+             TextureU +00000.000000,+00001.000000,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   -00032.000000,-00013.000000,-00160.000000
+             Vertex   -00032.000000,-00013.000000,+00160.000000
+             Vertex   -00032.000000,+00013.000000,+00160.000000
+             Vertex   -00032.000000,+00013.000000,-00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=6 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   -00032.000000,+00013.000000,-00160.000000
+             Normal   -00000.707107,+00000.707107,+00000.000000
+             TextureU +00000.707107,+00000.707107,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   -00032.000000,+00013.000000,-00160.000000
+             Vertex   -00032.000000,+00013.000000,+00160.000000
+             Vertex   -00013.000000,+00032.000000,+00160.000000
+             Vertex   -00013.000000,+00032.000000,-00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=7 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   -00013.000000,+00032.000000,-00160.000000
+             Normal   +00000.000000,+00001.000000,+00000.000000
+             TextureU +00001.000000,-00000.000000,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   -00013.000000,+00032.000000,-00160.000000
+             Vertex   -00013.000000,+00032.000000,+00160.000000
+             Vertex   +00013.000000,+00032.000000,+00160.000000
+             Vertex   +00013.000000,+00032.000000,-00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Cap Texture=HP2_Master.Floors.greenfloor Link=8 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   -00013.000000,+00032.000000,+00160.000000
+             Normal   +00000.000000,+00000.000000,+00001.000000
+             TextureU +00000.707107,-00000.707107,+00000.000000
+             TextureV +00000.707107,+00000.707107,-00000.000000
+             Vertex   -00013.000000,+00032.000000,+00160.000000
+             Vertex   -00032.000000,+00013.000000,+00160.000000
+             Vertex   -00032.000000,-00013.000000,+00160.000000
+             Vertex   -00013.000000,-00032.000000,+00160.000000
+             Vertex   +00013.000000,-00032.000000,+00160.000000
+             Vertex   +00032.000000,-00013.000000,+00160.000000
+             Vertex   +00032.000000,+00013.000000,+00160.000000
+             Vertex   +00013.000000,+00032.000000,+00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Cap Texture=HP2_Master.Floors.greenfloor Link=9 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00013.000000,+00032.000000,-00160.000000
+             Normal   +00000.000000,+00000.000000,-00001.000000
+             TextureU -00000.707107,-00000.707107,-00000.000000
+             TextureV -00000.707107,+00000.707107,+00000.000000
+             Vertex   +00013.000000,+00032.000000,-00160.000000
+             Vertex   +00032.000000,+00013.000000,-00160.000000
+             Vertex   +00032.000000,-00013.000000,-00160.000000
+             Vertex   +00013.000000,-00032.000000,-00160.000000
+             Vertex   -00013.000000,-00032.000000,-00160.000000
+             Vertex   -00032.000000,-00013.000000,-00160.000000
+             Vertex   -00032.000000,+00013.000000,-00160.000000
+             Vertex   -00013.000000,+00032.000000,-00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+       End PolyList
+    End Brush
+    Brush=Model'MyLevel.Model203'
+    CollisionRadius=32
+    CollisionWidth=32
+    CollisionHeight=160
+End Actor
+Begin Actor Class=Engine.Brush Name=Brush205
+    CsgOper=CSG_Add
+    MainScale=(SheerAxis=SHEER_ZX)
+    PostScale=(SheerAxis=SHEER_ZX)
+    Level=LevelInfo'MyLevel.LevelInfo174'
+    Tag=Brush
+    Region=(Zone=LevelInfo'MyLevel.LevelInfo174',iLeaf=-1)
+    Location=(X=256,Y=106,Z=111)
+    OldLocation=(X=256,Y=106,Z=111)
+    Begin Brush Name=Model206
+       Begin PolyList
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=0 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00013.000000,+00032.000000,-00160.000000
+             Normal   +00000.707107,+00000.707107,+00000.000000
+             TextureU +00000.707107,-00000.707107,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   +00013.000000,+00032.000000,-00160.000000
+             Vertex   +00013.000000,+00032.000000,+00160.000000
+             Vertex   +00032.000000,+00013.000000,+00160.000000
+             Vertex   +00032.000000,+00013.000000,-00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=1 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00032.000000,+00013.000000,-00160.000000
+             Normal   +00001.000000,+00000.000000,+00000.000000
+             TextureU +00000.000000,-00001.000000,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   +00032.000000,+00013.000000,-00160.000000
+             Vertex   +00032.000000,+00013.000000,+00160.000000
+             Vertex   +00032.000000,-00013.000000,+00160.000000
+             Vertex   +00032.000000,-00013.000000,-00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=2 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00032.000000,-00013.000000,-00160.000000
+             Normal   +00000.707107,-00000.707107,+00000.000000
+             TextureU -00000.707107,-00000.707107,-00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   +00032.000000,-00013.000000,-00160.000000
+             Vertex   +00032.000000,-00013.000000,+00160.000000
+             Vertex   +00013.000000,-00032.000000,+00160.000000
+             Vertex   +00013.000000,-00032.000000,-00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=3 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00013.000000,-00032.000000,-00160.000000
+             Normal   +00000.000000,-00001.000000,+00000.000000
+             TextureU -00001.000000,-00000.000000,-00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   +00013.000000,-00032.000000,-00160.000000
+             Vertex   +00013.000000,-00032.000000,+00160.000000
+             Vertex   -00013.000000,-00032.000000,+00160.000000
+             Vertex   -00013.000000,-00032.000000,-00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=4 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   -00013.000000,-00032.000000,-00160.000000
+             Normal   -00000.707107,-00000.707107,+00000.000000
+             TextureU -00000.707107,+00000.707107,+00000.000000
+             TextureV -00000.000000,+00000.000000,-00001.000000
+             Vertex   -00013.000000,-00032.000000,-00160.000000
+             Vertex   -00013.000000,-00032.000000,+00160.000000
+             Vertex   -00032.000000,-00013.000000,+00160.000000
+             Vertex   -00032.000000,-00013.000000,-00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=5 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   -00032.000000,-00013.000000,-00160.000000
+             Normal   -00001.000000,+00000.000000,+00000.000000
+             TextureU +00000.000000,+00001.000000,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   -00032.000000,-00013.000000,-00160.000000
+             Vertex   -00032.000000,-00013.000000,+00160.000000
+             Vertex   -00032.000000,+00013.000000,+00160.000000
+             Vertex   -00032.000000,+00013.000000,-00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=6 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   -00032.000000,+00013.000000,-00160.000000
+             Normal   -00000.707107,+00000.707107,+00000.000000
+             TextureU +00000.707107,+00000.707107,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   -00032.000000,+00013.000000,-00160.000000
+             Vertex   -00032.000000,+00013.000000,+00160.000000
+             Vertex   -00013.000000,+00032.000000,+00160.000000
+             Vertex   -00013.000000,+00032.000000,-00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Wall Texture=HP2_Master.Floors.greenfloor Link=7 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   -00013.000000,+00032.000000,-00160.000000
+             Normal   +00000.000000,+00001.000000,+00000.000000
+             TextureU +00001.000000,-00000.000000,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   -00013.000000,+00032.000000,-00160.000000
+             Vertex   -00013.000000,+00032.000000,+00160.000000
+             Vertex   +00013.000000,+00032.000000,+00160.000000
+             Vertex   +00013.000000,+00032.000000,-00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Cap Texture=HP2_Master.Floors.greenfloor Link=8 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   -00013.000000,+00032.000000,+00160.000000
+             Normal   +00000.000000,+00000.000000,+00001.000000
+             TextureU +00000.707107,-00000.707107,+00000.000000
+             TextureV +00000.707107,+00000.707107,-00000.000000
+             Vertex   -00013.000000,+00032.000000,+00160.000000
+             Vertex   -00032.000000,+00013.000000,+00160.000000
+             Vertex   -00032.000000,-00013.000000,+00160.000000
+             Vertex   -00013.000000,-00032.000000,+00160.000000
+             Vertex   +00013.000000,-00032.000000,+00160.000000
+             Vertex   +00032.000000,-00013.000000,+00160.000000
+             Vertex   +00032.000000,+00013.000000,+00160.000000
+             Vertex   +00013.000000,+00032.000000,+00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Item=Cap Texture=HP2_Master.Floors.greenfloor Link=9 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00013.000000,+00032.000000,-00160.000000
+             Normal   +00000.000000,+00000.000000,-00001.000000
+             TextureU -00000.707107,-00000.707107,-00000.000000
+             TextureV -00000.707107,+00000.707107,+00000.000000
+             Vertex   +00013.000000,+00032.000000,-00160.000000
+             Vertex   +00032.000000,+00013.000000,-00160.000000
+             Vertex   +00032.000000,-00013.000000,-00160.000000
+             Vertex   +00013.000000,-00032.000000,-00160.000000
+             Vertex   -00013.000000,-00032.000000,-00160.000000
+             Vertex   -00032.000000,-00013.000000,-00160.000000
+             Vertex   -00032.000000,+00013.000000,-00160.000000
+             Vertex   -00013.000000,+00032.000000,-00160.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+       End PolyList
+    End Brush
+    Brush=Model'MyLevel.Model206'
+    CollisionRadius=32
+    CollisionWidth=32
+    CollisionHeight=160
+End Actor
+End Map

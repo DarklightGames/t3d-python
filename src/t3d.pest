@@ -23,7 +23,8 @@ struct_properties = _{ property_assignment ~ WHITE_SPACE* ~ ("," ~ WHITE_SPACE* 
 struct_ = { "(" ~ struct_properties ~ ")" }
 
 property_assignment = { id ~ array_index? ~ WHITE_SPACE* ~ "=" ~ (NEWLINE | (WHITE_SPACE* ~ value)) }
-property_assignment_vector = { id ~  WHITE_SPACE+ ~ float ~ WHITE_SPACE* ~ ("," ~ WHITE_SPACE* ~ float)* }
+property_assignment_float_list = { float ~ WHITE_SPACE* ~ ("," ~ WHITE_SPACE* ~ float)* }
+property_assignment_vector = { id ~  WHITE_SPACE+ ~ property_assignment_float_list }
 property_assignment_inline_struct = { id ~ WS+ ~ property_assignment ~ (WS+ ~ property_assignment)* }
 
 object_statement = { object | property_assignment | property_assignment_vector | property_assignment_inline_struct }

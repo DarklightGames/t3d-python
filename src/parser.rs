@@ -139,14 +139,18 @@ impl T3dParser {
         )
     }
 
-    fn property_assignment_vector(input: Node) -> Result<T3dPropertyAssignmentVector> {
+    fn property_assignment_float_list(input: Node) -> Result<Vec<f32>> {
+        let mut values = Vec::new();
+        match_nodes_any!(input.into_children();
+            float(f) => values.push(f)
+        );
+        Ok(values)
+    }
 
+    fn property_assignment_vector(input: Node) -> Result<T3dPropertyAssignmentVector> {
         match_nodes!(input.into_children();
-            [id(name), float(x), float(y), float(z)] => {
-                Ok(T3dPropertyAssignmentVector {
-                    name,
-                    value: (x, y, z),
-                })
+            [id(name), property_assignment_float_list(value)] => {
+                Ok(T3dPropertyAssignmentVector { name, value })
             }
         )
     }

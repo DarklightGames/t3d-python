@@ -95,7 +95,7 @@ pub struct T3dPropertyAssignment {
 #[derive(Debug, Clone)]
 pub struct T3dPropertyAssignmentVector {
     pub name: String,
-    pub value: (f32, f32, f32),
+    pub value: Vec<f32>,
 }
 
 #[derive(Debug, Clone)]
@@ -136,7 +136,7 @@ pub struct T3dObject {
     #[pyo3(get)]
     pub properties: HashMap<String, T3dPropertyValue>,
     #[pyo3(get)]
-    pub vector_properties: Vec<(String, (f32, f32, f32))>,
+    pub vector_properties: Vec<(String, Vec<f32>)>,
 }
 
 impl IntoPy<PyObject> for Box<T3dObject> {

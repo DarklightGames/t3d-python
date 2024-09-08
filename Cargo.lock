@@ -342,7 +342,7 @@ dependencies = [
 
 [[package]]
 name = "t3d-python"
-version = "0.1.6"
+version = "0.1.7"
 dependencies = [
  "pest",
  "pest_consume",
