@@ -22,7 +22,7 @@ fn read_t3d(contents: &str) -> PyResult<Vec<T3dObject>> {
 }
 
 #[pymodule]
-fn t3dpy(_py: Python<'_>, m: &PyModule) -> PyResult<()> {
+fn t3dpy(m: &Bound<'_, PyModule>) -> PyResult<()> {
     m.add_class::<T3dObject>()?;
     m.add_class::<T3dReference>()?;
     m.add_function(wrap_pyfunction!(read_t3d, m)?)?;

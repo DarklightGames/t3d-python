@@ -1,6 +1,6 @@
 use std::collections::HashMap;
-use pyo3::prelude::*;
-use pyo3::{IntoPy, PyObject, Python, ToPyObject};
+use pyo3::{prelude::*, IntoPyObjectExt};
+use pyo3::{IntoPyObject, Python};
 use pyo3::exceptions::PyKeyError;
 
 pub type T3dStruct = HashMap<String, T3dValue>;
@@ -62,26 +62,24 @@ impl ToString for T3dValue {
     }
 }
 
-impl IntoPy<PyObject> for T3dValue {
-    fn into_py(self, py: Python<'_>) -> PyObject {
-        match self {
-            T3dValue::Int(value) => value.into_py(py),
-            T3dValue::Float(value) => value.into_py(py),
-            T3dValue::Bool(value) => value.into_py(py),
-            T3dValue::String(value) => value.into_py(py),
-            T3dValue::Struct(value) => value.as_ref().clone().into_py(py),
-            T3dValue::InlineStruct(value) => value.as_ref().clone().into_py(py),
-            T3dValue::Reference(value) => value.clone().into_py(py),
-            T3dValue::Identifier(value) => value.into_py(py),
-            T3dValue::Vector(value) => value.into_py(py),
-            T3dValue::Array(value) => value.into_py(py),
-        }
-    }
-}
+impl<'py> IntoPyObject<'py> for T3dValue {
+    type Target = PyAny;
+    type Output = Bound<'py, Self::Target>;
+    type Error = PyErr;
 
-impl ToPyObject for T3dValue {
-    fn to_object(&self, py: Python<'_>) -> PyObject {
-        self.clone().into_py(py)
+    fn into_pyobject(self, py: Python<'py>) -> Result<Self::Output, Self::Error> {
+        match self {
+            T3dValue::Int(value) => value.into_bound_py_any(py),
+            T3dValue::Float(value) => value.into_bound_py_any(py),
+            T3dValue::Bool(value) => value.into_bound_py_any(py),
+            T3dValue::String(value) => value.into_bound_py_any(py),
+            T3dValue::Struct(value) => value.as_ref().clone().into_bound_py_any(py),
+            T3dValue::InlineStruct(value) => value.as_ref().clone().into_bound_py_any(py),
+            T3dValue::Reference(value) => value.clone().into_bound_py_any(py),
+            T3dValue::Identifier(value) => value.into_bound_py_any(py),
+            T3dValue::Vector(value) => value.into_bound_py_any(py),
+            T3dValue::Array(value) => value.into_bound_py_any(py),
+        }
     }
 }
 
@@ -104,20 +102,24 @@ pub enum T3dPropertyValue {
     Array(Vec<(Option<i32>, T3dValue)>),
 }
 
-impl IntoPy<PyObject> for T3dPropertyValue {
-    fn into_py(self, py: Python<'_>) -> PyObject {
+impl<'py> IntoPyObject<'py> for T3dPropertyValue {
+    type Target = PyAny;
+    type Output = Bound<'py, Self::Target>;
+    type Error = PyErr;
+
+    fn into_pyobject(self, py: Python<'py>) -> Result<Self::Output, Self::Error> {
         match self {
-            T3dPropertyValue::Value(value) => { value.into_py(py) }
-            T3dPropertyValue::Array(array) => { array.into_py(py) }
+            T3dPropertyValue::Value(value) => { value.into_pyobject(py) }
+            T3dPropertyValue::Array(array) => { array.into_pyobject(py) }
         }
     }
 }
 
-impl ToPyObject for T3dPropertyValue {
-    fn to_object(&self, py: Python<'_>) -> PyObject {
-        self.clone().into_py(py)
-    }
-}
+// impl ToPyObject for T3dPropertyValue {
+//     fn to_object(&self, py: Python<'_>) -> PyObject {
+//         self.clone().into_py(py)
+//     }
+// }
 
 #[derive(Debug, Clone)]
 pub enum T3dObjectStatement {
@@ -139,9 +141,13 @@ pub struct T3dObject {
     pub vector_properties: Vec<(String, Vec<f32>)>,
 }
 
-impl IntoPy<PyObject> for Box<T3dObject> {
-    fn into_py(self, py: Python<'_>) -> PyObject {
-        return self.as_ref().clone().into_py(py)
+impl<'py> IntoPyObject<'py> for Box<T3dObject> {
+    type Target = PyAny;
+    type Output = Bound<'py, Self::Target>;
+    type Error = PyErr;
+
+    fn into_pyobject(self, py: Python<'py>) -> Result<Self::Output, Self::Error> {
+        self.as_ref().clone().into_bound_py_any(py)
     }
 }
 
