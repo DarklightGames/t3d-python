@@ -139,7 +139,7 @@ impl T3dParser {
         )
     }
 
-    fn property_assignment_float_list(input: Node) -> Result<Vec<f32>> {
+    fn property_assignment_float_list(input: Node) -> Result<Vec<f64>> {
         let mut values = Vec::new();
         match_nodes_any!(input.into_children();
             float(f) => values.push(f)
@@ -171,12 +171,12 @@ impl T3dParser {
         })
     }
 
-    fn int(input: Node) -> Result<i32> {
-        Ok(input.as_str().parse::<i32>().unwrap())
+    fn int(input: Node) -> Result<i64> {
+        Ok(input.as_str().parse::<i64>().unwrap())
     }
 
-    fn float(input: Node) -> Result<f32> {
-        Ok(input.as_str().parse::<f32>().unwrap())
+    fn float(input: Node) -> Result<f64> {
+        Ok(input.as_str().parse::<f64>().unwrap())
     }
 
     fn string(input: Node) -> Result<String> {

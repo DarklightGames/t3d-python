@@ -33,15 +33,15 @@ impl T3dReference {
 
 #[derive(Debug, Clone)]
 pub enum T3dValue {
-    Int(i32),
-    Float(f32),
+    Int(i64),
+    Float(f64),
     Bool(bool),
     String(String),
     Struct(Box<T3dStruct>),
     InlineStruct(Box<T3dStruct>),
     Reference(T3dReference),
     Identifier(String),
-    Vector((f32, f32, f32)),
+    Vector((f64, f64, f64)),
     Array(Vec<Option<T3dValue>>)
 }
 
@@ -86,20 +86,20 @@ impl<'py> IntoPyObject<'py> for T3dValue {
 #[derive(Debug, Clone)]
 pub struct T3dPropertyAssignment {
     pub name: String,
-    pub index: Option<i32>,
+    pub index: Option<i64>,
     pub value: T3dValue,
 }
 
 #[derive(Debug, Clone)]
 pub struct T3dPropertyAssignmentVector {
     pub name: String,
-    pub value: Vec<f32>,
+    pub value: Vec<f64>,
 }
 
 #[derive(Debug, Clone)]
 pub enum T3dPropertyValue {
     Value(T3dValue),
-    Array(Vec<(Option<i32>, T3dValue)>),
+    Array(Vec<(Option<i64>, T3dValue)>),
 }
 
 impl<'py> IntoPyObject<'py> for T3dPropertyValue {
@@ -138,7 +138,7 @@ pub struct T3dObject {
     #[pyo3(get)]
     pub properties: HashMap<String, T3dPropertyValue>,
     #[pyo3(get)]
-    pub vector_properties: Vec<(String, Vec<f32>)>,
+    pub vector_properties: Vec<(String, Vec<f64>)>,
 }
 
 impl<'py> IntoPyObject<'py> for Box<T3dObject> {
