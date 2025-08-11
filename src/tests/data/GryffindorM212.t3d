@@ -1,0 +1,104 @@
+Begin Map
+Begin Actor Class=Engine.Brush Name=Brush489
+    CsgOper=CSG_Add
+    MainScale=(SheerAxis=SHEER_ZX)
+    PostScale=(SheerAxis=SHEER_ZX)
+    Group="None,01 start"
+    Level=LevelInfo'MyLevel.LevelInfo0'
+    Tag=Brush
+    Region=(Zone=LevelInfo'MyLevel.LevelInfo0',iLeaf=-1)
+    Location=(Y=896,Z=704)
+    Rotation=(Yaw=16384)
+    OldRotation=(Yaw=16384)
+    OldLocation=(Y=896,Z=704)
+    Begin Brush Name=Model325
+       Begin PolyList
+          Begin Polygon Texture=BL_CocaCola.Wall.R1_coca Link=0 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   -00032.000004,+00000.000000,-00032.000000
+             Normal   -00000.707107,+00000.000000,-00000.707107
+             Pan      U=0 V=51
+             TextureU +00000.000000,-00001.000000,+00000.000000
+             TextureV -00000.707107,+00000.000000,+00000.707107
+             Vertex   -00000.000008,-00256.000000,-00064.000000
+             Vertex   -00064.000000,-00256.000000,+00000.000003
+             Vertex   -00064.000000,+00256.000000,+00000.000003
+             Vertex   -00000.000004,+00256.000000,-00064.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Texture=BL_CocaCola.Wall.R1_coca Link=1 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   -00064.000000,-00256.000000,-00064.000000
+             Normal   -00001.000000,+00000.000000,+00000.000000
+             Pan      U=0 V=-142
+             TextureU +00000.000000,+00001.000000,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   -00064.000000,-00256.000000,-00000.000001
+             Vertex   -00064.000000,-00256.000000,+00064.000000
+             Vertex   -00064.000000,+00256.000000,+00064.000000
+             Vertex   -00064.000000,+00256.000000,-00000.000001
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Texture=Skurge.Wall.skurge_Runner Flags=2147483648 Link=2 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   -00064.000000,+00256.000000,-00064.000000
+             Normal   +00000.000000,+00001.000000,+00000.000000
+             TextureU +00001.000000,+00000.000000,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   -00000.000008,+00256.000000,-00064.000000
+             Vertex   -00064.000000,+00256.000000,-00000.000001
+             Vertex   -00064.000000,+00256.000000,+00064.000000
+             Vertex   +00064.000000,+00256.000000,+00064.000000
+             Vertex   +00064.000000,+00256.000000,-00064.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Texture=Skurge.Wall.skurge_Runner Link=3 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00064.000000,+00256.000000,-00064.000000
+             Normal   +00001.000000,+00000.000000,+00000.000000
+             TextureU +00000.000000,-00001.000000,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   +00064.000000,+00256.000000,-00064.000000
+             Vertex   +00064.000000,+00256.000000,+00064.000000
+             Vertex   +00064.000000,-00256.000000,+00064.000000
+             Vertex   +00064.000000,-00256.000000,-00064.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Texture=Skurge.Wall.skurge_Runner Flags=2147483648 Link=4 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   +00064.000000,-00256.000000,-00064.000000
+             Normal   +00000.000000,-00001.000000,+00000.000000
+             TextureU -00001.000000,+00000.000000,+00000.000000
+             TextureV +00000.000000,+00000.000000,-00001.000000
+             Vertex   -00000.000008,-00256.000000,-00064.000000
+             Vertex   +00064.000000,-00256.000000,-00064.000000
+             Vertex   +00064.000000,-00256.000000,+00064.000000
+             Vertex   -00064.000000,-00256.000000,+00064.000000
+             Vertex   -00064.000000,-00256.000000,-00000.000001
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Texture=Skurge.Floors.GreyFlagstonefl Link=5 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   -00064.000000,+00256.000000,+00064.000000
+             Normal   +00000.000000,+00000.000000,+00001.000000
+             TextureU +00001.000000,+00000.000000,+00000.000000
+             TextureV +00000.000000,+00001.000000,+00000.000000
+             Vertex   -00064.000000,+00256.000000,+00064.000000
+             Vertex   -00064.000000,-00256.000000,+00064.000000
+             Vertex   +00064.000000,-00256.000000,+00064.000000
+             Vertex   +00064.000000,+00256.000000,+00064.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+          Begin Polygon Texture=BL_CocaCola.Wall.R1_coca Link=6 LightMapScale=32.000000 SpecialLitChannel=0 SurfaceTag=None
+             Origin   -00064.000000,-00256.000000,-00064.000000
+             Normal   +00000.000000,+00000.000000,-00001.000000
+             TextureU +00001.000000,+00000.000000,+00000.000000
+             TextureV +00000.000000,-00001.000000,+00000.000000
+             Vertex   -00000.000008,-00256.000000,-00064.000000
+             Vertex   -00000.000008,+00256.000000,-00064.000000
+             Vertex   +00064.000000,+00256.000000,-00064.000000
+             Vertex   +00064.000000,-00256.000000,-00064.000000
+             SurfaceColor   +00000.000000,+00000.000000,+00000.000000,+00000.000000
+          End Polygon
+       End PolyList
+    End Brush
+    Brush=Model'MyLevel.Model325'
+    CollisionRadius=256
+    CollisionWidth=256
+    CollisionHeight=64
+End Actor
+End Map

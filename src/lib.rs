@@ -232,4 +232,17 @@ mod tests {
         }
     }
 
+    #[test]
+    fn m212_64_bit_test() -> Result<(), String> {
+        // This has 64-bit integers in it which previously failed to parse.
+        match parse_file("src/tests/data/GryffindorM212.t3d".to_string()) {
+            Ok(_objects) => {
+                Ok(())
+            }
+            Err(error) => {
+                Err(error)
+            }
+        }
+    }
+
 }
