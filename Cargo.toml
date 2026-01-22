@@ -17,4 +17,4 @@ pest_consume_macros = "1.1.0"
 
 [dependencies.pyo3]
 version = "0.25.1"
-features = ["extension-module", "macros"]
+features = ["extension-module", "macros", "abi3-py311", "generate-import-lib"]
