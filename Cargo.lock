@@ -274,14 +274,22 @@ dependencies = [
 ]
 
 [[package]]
-name = "t3d-python"
-version = "0.1.9"
+name = "t3d"
+version = "0.1.0"
+source = "git+https://github.com/DarklightGames/t3d-rs#a82f1fb9784dc3fb5b5e2fd824b9d0bdffc9b27f"
 dependencies = [
  "pest",
  "pest_consume",
  "pest_consume_macros",
  "pest_derive",
+]
+
+[[package]]
+name = "t3d-python"
+version = "0.1.9"
+dependencies = [
  "pyo3",
+ "t3d",
 ]
 
 [[package]]

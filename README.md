@@ -2,6 +2,8 @@
 
 A Python 3.10+ module for reading [T3D files](https://wiki.beyondunreal.com/Legacy:T3D_File).
 
+The parser itself lives in [t3d-rs](https://github.com/DarklightGames/t3d-rs); this module provides the Python bindings.
+
 This library is still a work-in-progress.
 
 # Installation
