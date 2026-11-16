@@ -78,28 +78,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "pest_consume"
-version = "1.1.3"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "79447402d15d18e7142e14c72f2e63fa3d155be1bc5b70b3ccbb610ac55f536b"
-dependencies = [
- "pest",
- "pest_consume_macros",
- "pest_derive",
-]
-
-[[package]]
-name = "pest_consume_macros"
-version = "1.1.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9d8630a7a899cb344ec1c16ba0a6b24240029af34bdc0a21f84e411d7f793f29"
-dependencies = [
- "proc-macro2",
- "quote",
- "syn 1.0.109",
-]
-
-[[package]]
 name = "pest_derive"
 version = "2.9.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -119,7 +97,7 @@ dependencies = [
  "pest_meta",
  "proc-macro2",
  "quote",
- "syn 3.0.10",
+ "syn",
 ]
 
 [[package]]
@@ -208,7 +186,7 @@ dependencies = [
  "proc-macro2",
  "pyo3-macros-backend",
  "quote",
- "syn 3.0.10",
+ "syn",
 ]
 
 [[package]]
@@ -220,7 +198,7 @@ dependencies = [
  "heck",
  "proc-macro2",
  "quote",
- "syn 3.0.10",
+ "syn",
 ]
 
 [[package]]
@@ -253,17 +231,6 @@ dependencies = [
 
 [[package]]
 name = "syn"
-version = "1.0.109"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "72b64191b275b66ffe2469e8af2c1cfe3bafa67b529ead792a6d0160888b4237"
-dependencies = [
- "proc-macro2",
- "quote",
- "unicode-ident",
-]
-
-[[package]]
-name = "syn"
 version = "3.0.10"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "4ae9ccbea3a7b0b09443036490c8f34a8b1b760fd345e5c0dae0aac718faea79"
@@ -276,11 +243,9 @@ dependencies = [
 [[package]]
 name = "t3d"
 version = "0.1.0"
-source = "git+https://github.com/DarklightGames/t3d-rs#a82f1fb9784dc3fb5b5e2fd824b9d0bdffc9b27f"
+source = "git+https://github.com/DarklightGames/t3d-rs#3dd7fa2037206641d956b2095e34595dc58e2f37"
 dependencies = [
  "pest",
- "pest_consume",
- "pest_consume_macros",
  "pest_derive",
 ]
 

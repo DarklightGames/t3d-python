@@ -1,9 +1,11 @@
-use pyo3::exceptions::{PyKeyError, PySyntaxError};
+use std::ffi::CString;
+
+use pyo3::exceptions::{PyKeyError, PySyntaxError, PySyntaxWarning};
 use pyo3::prelude::*;
 use pyo3::types::{PyDict, PyList, PyTuple};
 use pyo3::IntoPyObjectExt;
 
-use t3d::{T3dObject, T3dPropertyValue, T3dReference, T3dStruct, T3dValue};
+use t3d::{ParseMode, ParseOptions, T3dError, T3dObject, T3dPropertyValue, T3dReference, T3dStruct, T3dValue};
 
 /// A reference to another object, e.g. `StaticMesh'Package.Group.Name'`.
 #[pyclass(name = "T3dReference")]
@@ -125,11 +127,29 @@ fn property_value_to_py<'py>(
     }
 }
 
+/// Parses T3D text into a list of top-level objects.
+///
+/// By default parsing is permissive: lines that cannot be parsed are discarded
+/// and text after a complete statement is ignored, and each such problem is
+/// reported as a `SyntaxWarning` (use the `warnings` module to filter them or
+/// turn them into errors). With `strict=True`, any problem raises a
+/// `SyntaxError` listing all of them instead.
 #[pyfunction]
-fn read_t3d(contents: &str) -> PyResult<Vec<PyT3dObject>> {
-    t3d::parse_t3d(contents)
-        .map(|objects| objects.into_iter().map(PyT3dObject).collect())
-        .map_err(|err| PySyntaxError::new_err(format!("{:?}", err)))
+#[pyo3(signature = (contents, *, strict = false))]
+fn read_t3d(py: Python<'_>, contents: &str, strict: bool) -> PyResult<Vec<PyT3dObject>> {
+    let mode = if strict { ParseMode::Strict } else { ParseMode::Permissive };
+    let parsed = t3d::parse_t3d_with(contents, &ParseOptions { mode }).map_err(|err| match err {
+        T3dError::Strict(diagnostics) => {
+            let lines: Vec<String> = diagnostics.iter().map(|d| d.to_string()).collect();
+            PySyntaxError::new_err(format!("invalid T3D:\n{}", lines.join("\n")))
+        }
+    })?;
+    let category = py.get_type::<PySyntaxWarning>();
+    for diagnostic in &parsed.diagnostics {
+        let message = CString::new(diagnostic.to_string().replace('\0', "")).unwrap();
+        PyErr::warn(py, &category, &message, 1)?;
+    }
+    Ok(parsed.value.into_iter().map(PyT3dObject).collect())
 }
 
 #[pymodule]

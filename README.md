@@ -38,3 +38,23 @@ with open('./data.t3d', 'r') as fp:
         # Get a specific property by name.
         print(t3d_object["SomeProperty"])
 ```
+
+## Malformed input
+
+By default, `read_t3d` is permissive, like Unreal Engine's own importer: lines that cannot be parsed are discarded, and text after a complete property assignment is ignored. Each problem is reported as a `SyntaxWarning`:
+
+```python
+import warnings
+
+# Show every problem (Python shows each distinct warning only once by default).
+warnings.simplefilter("always", SyntaxWarning)
+
+# Or turn problems into exceptions.
+warnings.simplefilter("error", SyntaxWarning)
+```
+
+To reject malformed input instead, pass `strict=True`; any problem then raises a `SyntaxError` that lists all of them:
+
+```python
+objects = read_t3d(contents, strict=True)
+```
