@@ -10,7 +10,7 @@ crate-type=["cdylib"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 [dependencies]
-t3d = { git = "https://github.com/DarklightGames/t3d-rs" }
+t3d = "0.1"
 
 [dependencies.pyo3]
 version = "0.30.1"
