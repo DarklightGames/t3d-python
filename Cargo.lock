@@ -252,7 +252,7 @@ dependencies = [
 
 [[package]]
 name = "t3d-python"
-version = "0.1.9"
+version = "0.2.0"
 dependencies = [
  "pyo3",
  "t3d",
